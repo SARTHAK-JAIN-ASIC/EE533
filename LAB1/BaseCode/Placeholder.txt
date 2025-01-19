@@ -1,1 +1,1 @@
-this folder contains the server client codes and executables for one to one connection (connection closes after connecting to one client)
+This folder contains the server client codes and executables for one to one connection (connection closes after connecting to one client)
