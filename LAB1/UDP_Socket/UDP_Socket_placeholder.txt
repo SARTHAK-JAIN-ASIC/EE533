@@ -1,0 +1,4 @@
+This folder contains code and executables for datagram socket connections. We use a datagram socket in cases where there is only one message being sent from the client to the server, and only one message being sent back.
+
+Made changes:
+ 1. Used rcvdfrom and Sendto functions instead of read and write
