@@ -1,0 +1,1 @@
+This folder holds the code and the executables for connecting and accepting multiple client connections (by the server)
