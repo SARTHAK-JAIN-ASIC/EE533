@@ -6,17 +6,10 @@ BEGIN SCHEMATIC
         EDITTRAIT all:0
     END ATTR
     BEGIN NETLIST
-        SIGNAL XLXN_1
-        SIGNAL XLXN_6
         SIGNAL XLXN_7
-        SIGNAL XLXN_8
         SIGNAL IN_S(1)
-        SIGNAL XLXN_10
-        SIGNAL XLXN_11
         SIGNAL XLXN_12
-        SIGNAL XLXN_13
         SIGNAL IN_S(2)
-        SIGNAL XLXN_15
         SIGNAL XLXN_16
         SIGNAL XLXN_17
         SIGNAL XLXN_18
@@ -136,7 +129,6 @@ BEGIN SCHEMATIC
         SIGNAL OUT_S(3)
         SIGNAL OUT_S(2)
         SIGNAL OUT_S(1)
-        SIGNAL XLXN_152
         SIGNAL OUT_S(0)
         SIGNAL OUT_S(25)
         SIGNAL OUT_S(30)
@@ -146,7 +138,7 @@ BEGIN SCHEMATIC
         PORT Input IN_S(31:0)
         PORT Output OUT_S(31:0)
         BEGIN BLOCKDEF Left_Right_Shifter
-            TIMESTAMP 2025 1 25 21 33 12
+            TIMESTAMP 2025 1 26 4 6 57
             RECTANGLE N -128 -160 128 160 
             LINE N -128 -64 -192 -64 
             LINE N -128 128 -192 128 
