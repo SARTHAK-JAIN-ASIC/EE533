@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nf:module xmlns:nf="http://www.NetFPGA.org/NF2_register_system" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.NetFPGA.org/NF2_register_system NF2_register_system.xsd ">
+	<nf:name>ila_top</nf:name>
+	<nf:prefix>ila_top</nf:prefix>
+	<nf:location>udp</nf:location>
+	<nf:description>Registers for ila_top</nf:description>
+	<nf:blocksize>128</nf:blocksize>
+	<nf:registers>
+		<!-- DataIn_1 Registers -->
+		<nf:register>
+		  <nf:name>ila_upper_0</nf:name>
+			<nf:description>Upper 32 bits of DataIn_1</nf:description>
+			<nf:type>generic_hardware32</nf:type>
+		</nf:register>
+		<nf:register>
+		  <nf:name>ila_lower_0</nf:name>
+			<nf:description>Lower 32 bits of DataIn_1</nf:description>
+			<nf:type>generic_hardware32</nf:type>
+		</nf:register>
+		<!-- DataIn_2 Registers -->
+		<nf:register>
+		  <nf:name>ila_upper_1</nf:name>
+			<nf:description>Upper 32 bits of DataIn_1</nf:description>
+			<nf:type>generic_hardware32</nf:type>
+		</nf:register>
+		<nf:register>
+		  <nf:name>ila_lower_1</nf:name>
+			<nf:description>Lower 32 bits of DataIn_1</nf:description>
+			<nf:type>generic_hardware32</nf:type>
+		</nf:register>
+		<!-- DataIn_3 Registers -->
+		<nf:register>
+		  <nf:name>ila_upper_2</nf:name>
+			<nf:description>Upper 32 bits of DataIn_1</nf:description>
+			<nf:type>generic_hardware32</nf:type>
+		</nf:register>
+		<nf:register>
+		  <nf:name>ila_lower_2</nf:name>
+			<nf:description>Lower 32 bits of DataIn_1</nf:description>
+			<nf:type>generic_hardware32</nf:type>
+		</nf:register>
+		<!-- DataIn_4 Registers -->
+		<nf:register>
+		  <nf:name>ila_upper_3</nf:name>
+			<nf:description>Upper 32 bits of DataIn_1</nf:description>
+			<nf:type>generic_hardware32</nf:type>
+		</nf:register>
+		<nf:register>
+		  <nf:name>ila_lower_3</nf:name>
+			<nf:description>Lower 32 bits of DataIn_1</nf:description>
+			<nf:type>generic_hardware32</nf:type>
+		</nf:register>
+		<!-- DataIn_5 Registers -->
+		<nf:register>
+		  <nf:name>ila_upper_4</nf:name>
+			<nf:description>Upper 32 bits of DataIn_1</nf:description>
+			<nf:type>generic_hardware32</nf:type>
+		</nf:register>
+		<nf:register>
+		  <nf:name>ila_lower_4</nf:name>
+			<nf:description>Lower 32 bits of DataIn_1</nf:description>
+			<nf:type>generic_hardware32</nf:type>
+		</nf:register>
+		<!-- DataIn_6 Registers -->
+		<nf:register>
+		  <nf:name>ila_upper_5</nf:name>
+			<nf:description>Upper 32 bits of DataIn_1</nf:description>
+			<nf:type>generic_hardware32</nf:type>
+		</nf:register>
+		<nf:register>
+		  <nf:name>ila_lower_5</nf:name>
+			<nf:description>Lower 32 bits of DataIn_1</nf:description>
+			<nf:type>generic_hardware32</nf:type>
+		</nf:register>
+		<!-- DataIn_7 Registers -->
+		<nf:register>
+		  <nf:name>ila_upper_6</nf:name>
+			<nf:description>Upper 32 bits of DataIn_1</nf:description>
+			<nf:type>generic_hardware32</nf:type>
+		</nf:register>
+		<nf:register>
+		  <nf:name>ila_lower_6</nf:name>
+			<nf:description>Lower 32 bits of DataIn_1</nf:description>
+			<nf:type>generic_hardware32</nf:type>
+		</nf:register>
+		<!-- DataIn_8 Registers -->
+		<nf:register>
+		  <nf:name>ila_upper_7</nf:name>
+			<nf:description>Upper 32 bits of DataIn_1</nf:description>
+			<nf:type>generic_hardware32</nf:type>
+		</nf:register>
+		<nf:register>
+		  <nf:name>ila_lower_7</nf:name>
+			<nf:description>Lower 32 bits of DataIn_1</nf:description>
+			<nf:type>generic_hardware32</nf:type>
+		</nf:register>
+	</nf:registers>
+</nf:module>
+

@@ -1,0 +1,1763 @@
+Release 10.1.03 - par K.39 (lin64)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Sat Mar 08 16:50:20 2025
+
+  SmartGuide Results
+  ------------------
+  This section describes the guide results after invoking the Router. This
+  report accurately reflects the differences between the input design
+  and the guide design.
+
+  Number of Components in the input design    |  14863
+    Number of guided Components               |  14509 out of  14863  97.6%
+    Number of re-implemented Components       |    291 out of  14863   2.0%
+    Number of new/changed Components          |     63 out of  14863   0.4%
+  Number of Nets in the input design          |  35730
+    Number of guided Nets                     |  33509 out of  35730  93.8%
+    Number of partially guided Nets           |    894 out of  35730   2.5%
+    Number of re-routed Nets                  |   1140 out of  35730   3.2%
+    Number of new/changed Nets                |    187 out of  35730   0.5%
+
+
+The following Components were re-implemented.
+---------------------------------------------
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/rstblk/wr_rst_asreg_d1 : SLICE_X26Y157.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/alu_o_or0000 : SLICE_X38Y167.
+ nf2_core/cpci_bus/cpci_rd_data_nxt(7) : SLICE_X21Y164.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/rstblk/wr_rst_asreg : SLICE_X28Y158.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/C(3)(0) : SLICE_X26Y159.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(22) : SLICE_X23Y156.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(44) : SLICE_X55Y168.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/rstblk/wr_rst_reg<0> :
+SLICE_X58Y170.
+ nf2_core/user_data_path/arm_datapath/IFID_CPU_instr(11) : SLICE_X33Y164.
+ nf2_core/user_data_path/arm_datapath/IFID_CPU_instr(20) : SLICE_X36Y159.
+ nf2_core/cpci_bus/cpci_rd_data_nxt(10) : SLICE_X23Y173.
+ nf2_core/cpci_bus/cpci_rd_data_nxt(13) : SLICE_X31Y166.
+ nf2_core/cpci_bus/cpci_rd_data_nxt(21) : SLICE_X22Y161.
+ nf2_core/cpci_bus/cpci_rd_data_nxt(31) : SLICE_X28Y162.
+ nf2_core/cpci_bus/cpci_rd_data_nxt(16) : SLICE_X18Y165.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg_d1<
+4> : SLICE_X65Y161.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(9) : SLICE_X24Y170.
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/N5 : SLICE_X23Y5.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_10_9 : SLICE_X25Y173.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_0_11 : SLICE_X29Y173.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_0_42 : SLICE_X56Y167.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[4].cla_8bit/C(8)_bdd6 : SLICE_X38Y162.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[4].cla_8bit/C(8)_bdd10 :
+SLICE_X32Y163.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/rstblk/rd_rst_asreg : SLICE_X30Y165.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d1<5> :
+SLICE_X57Y164.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d1<6> :
+SLICE_X54Y165.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(16) : SLICE_X20Y163.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[5].cla_8bit/C(8)_bdd10 :
+SLICE_X50Y165.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(44) : SLICE_X56Y168.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d1<0> : SLICE_X25Y161.
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(11) : SLICE_X24Y173.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(55) : SLICE_X64Y158.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(11) : SLICE_X27Y162.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(20) : SLICE_X21Y152.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(28) : SLICE_X19Y163.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_bin<4> :
+SLICE_X58Y167.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d2<6> :
+SLICE_X52Y167.
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(56) : SLICE_X65Y160.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_14_1 : SLICE_X20Y173.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_1_11 : SLICE_X30Y170.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(14) : SLICE_X22Y169.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(17) : SLICE_X23Y155.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_3_31 : SLICE_X21Y157.
+ nf2_core/user_data_path/arm_datapath/MEMWB_DataMem_o(29) : SLICE_X27Y159.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d2<0> : SLICE_X23Y160.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<2> : SLICE_X20Y161.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc<2> : SLICE_X20Y160.
+ nf2_core/cpci_bus/cpci_rd_data_nxt(22) : SLICE_X24Y167.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_2_1 : SLICE_X20Y172.
+ nf2_core/user_data_path/oq_in_reg_addr(20) : SLICE_X23Y148.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(22) : SLICE_X20Y158.
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(31) : SLICE_X33Y163.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d2<2> : SLICE_X27Y158.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg_d1<1> : SLICE_X23Y164.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc<3> : SLICE_X22Y164.
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(0) : SLICE_X22Y165.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.rd/gr1.rfwft/empty_fwft_fb : SLICE_X25Y164.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_11_1 : SLICE_X21Y172.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(6) : SLICE_X24Y165.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(6) : SLICE_X25Y165.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_12_11 : SLICE_X24Y166.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(2) : SLICE_X25Y166.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(12) : SLICE_X24Y171.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(7) : SLICE_X28Y168.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_11_11 : SLICE_X22Y166.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(13) : SLICE_X25Y170.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_4_1 : SLICE_X28Y173.
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/N23 : SLICE_X26Y12.
+ nf2_core/user_data_path/arm_datapath/MEMWB_DataMem_o(14) : SLICE_X25Y169.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(5) : SLICE_X27Y165.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(4) : SLICE_X28Y166.
+ nf2_core/cpci_bus/cpci_rd_data_nxt(26) : SLICE_X24Y169.
+ nf2_core/user_data_path/arm_datapath/IDEX_signExtended_o(9) : SLICE_X27Y172.
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter(2) : SLICE_X27Y9.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_1_39 : SLICE_X50Y162.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(5) : SLICE_X26Y170.
+ nf2_core/user_data_path/arm_datapath/IDEX_signExtended_o(5) : SLICE_X26Y171.
+ nf2_core/user_data_path/arm_datapath/IDEX_signExtended_o(10) : SLICE_X26Y173.
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(1) : SLICE_X24Y168.
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_state_FSM_FFd9-In50 : SLICE_X27Y7.
+ nf2_core/cpci_bus/cpci_rd_data_nxt(24) : SLICE_X28Y167.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(1) : SLICE_X29Y168.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(10) : SLICE_X26Y162.
+ nf2_core/user_data_path/arm_datapath/IDEX_signExtended_o(1) : SLICE_X27Y170.
+ nf2_core/user_data_path/arm_datapath/IDEX_signExtended_o(11) : SLICE_X26Y172.
+ nf2_core/user_data_path/arm_datapath/signExtend/Mmux_immediate1310 : SLICE_X32Y166.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(0) : SLICE_X27Y164.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(0) : SLICE_X29Y167.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(3) : SLICE_X32Y165.
+ nf2_core/user_data_path/arm_datapath/IFID_CPU_instr(8) : SLICE_X32Y164.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_6_12 : SLICE_X34Y167.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_2_55 : SLICE_X60Y158.
+ nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/U0/gen_as.fgas/normgen.flblk/thrmod/pflogic/dif
+f_pntr_mux0000<8> : SLICE_X37Y159.
+ nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/U0/gen_as.fgas/normgen.flblk/thrmod/pflogic/dif
+f_pntr_mux0000<3> : SLICE_X36Y158.
+ nf2_core/user_data_path/arm_datapath/EXMEM_writeReg_o(0) : SLICE_X39Y162.
+ nf2_core/user_data_path/arm_datapath/EXMEM_writeReg_o(3) : SLICE_X39Y164.
+ nf2_core/user_data_path/arm_datapath/IDEX_writeReg_o(2) : SLICE_X38Y165.
+ nf2_core/user_data_path/arm_datapath/EXMEM_writeReg_o(1) : SLICE_X38Y164.
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(39) : SLICE_X39Y163.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_7_11 : SLICE_X30Y172.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(44) : SLICE_X54Y169.
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(44) : SLICE_X51Y164.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(50) : SLICE_X61Y166.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/rstblk/wr_rst_asreg_d1 :
+SLICE_X51Y165.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/rstblk/wr_rst_asreg :
+SLICE_X56Y166.
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(50) : SLICE_X59Y164.
+ nf2_core/user_data_path/arm_datapath/MEMWB_DataMem_o(46) : SLICE_X61Y160.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(54) : SLICE_X60Y163.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_8_31 : SLICE_X20Y157.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d3<4> :
+SLICE_X58Y165.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(51) : SLICE_X61Y165.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(48) : SLICE_X54Y167.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_7_39 : SLICE_X51Y169.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_11_42 : SLICE_X61Y161.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_5_42 : SLICE_X60Y166.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(49) : SLICE_X59Y167.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_9_60 : SLICE_X64Y160.
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(54) : SLICE_X62Y163.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(61) : SLICE_X63Y160.
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(61) : SLICE_X62Y159.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(63) : SLICE_X63Y158.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(60) : SLICE_X63Y159.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg_d1<
+8> : SLICE_X59Y165.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg_d1<
+6> : SLICE_X58Y169.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/wr_pntr_gc<3> : SLICE_X22Y158.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(9) : SLICE_X29Y169.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_10_8 : SLICE_X22Y170.
+ nf2_core/cpci_bus/n2p_fifo_empty : SLICE_X23Y167.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_10_13 : SLICE_X30Y166.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_14_9 : SLICE_X24Y174.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<6>
+: SLICE_X62Y167.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_4_9 : SLICE_X18Y173.
+ nf2_core/cpci_bus/pci2net_fifo/BU2/U0/grf.rf/rstblk/rd_rst_asreg_d2 : SLICE_X17Y144.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_8_60 : SLICE_X64Y161.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_8_61 : SLICE_X68Y160.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_9_17 : SLICE_X11Y147.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_10_60 : SLICE_X73Y168.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_12_27 : SLICE_X10Y140.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_11_31 : SLICE_X18Y161.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(14) : SLICE_X23Y171.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(0)13 : SLICE_X39Y72.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d3<1> : SLICE_X22Y162.
+ nf2_core/core_reg_wr_data(3) : SLICE_X23Y104.
+ nf2_core/core_reg_wr_data(5) : SLICE_X26Y121.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(42) : SLICE_X52Y166.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(46) : SLICE_X54Y168.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(47) : SLICE_X55Y166.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(2)26 : SLICE_X79Y91.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(2) : SLICE_X27Y169.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(4) : SLICE_X26Y168.
+ nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/U0/gen_as.fgas/normgen.flblk/clkmod/cx.rdx/pntr
+_gc_x2<7> : SLICE_X37Y158.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(51) : SLICE_X59Y163.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(60) : SLICE_X62Y158.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(53) : SLICE_X54Y152.
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(3) : SLICE_X31Y164.
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(4) : SLICE_X28Y161.
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(5) : SLICE_X30Y169.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(9) : SLICE_X28Y171.
+ nf2_core/cpci_bus/cpci_rd_data_nxt(12) : SLICE_X18Y169.
+ nf2_core/cpci_bus/cpci_rd_data_nxt(25) : SLICE_X23Y172.
+ nf2_core/cpci_bus/cpci_rd_data_nxt(28) : SLICE_X25Y172.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(7) : SLICE_X31Y168.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[3].cla_8bit/C(8)_bdd10 :
+SLICE_X26Y158.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/alu_o(1)1_1 : SLICE_X35Y166.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/N71 : SLICE_X111Y22.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(10)_SW0_2 : SLICE_X115Y10.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(11)_SW0_2 : SLICE_X95Y61.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/N55 : SLICE_X56Y54.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/N55 : SLICE_X5Y124.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(10)_2 : SLICE_X53Y52.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(10)_2 : SLICE_X100Y30.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(11)_2 : SLICE_X3Y129.
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(30) : SLICE_X23Y163.
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(51) : SLICE_X61Y168.
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(38) : SLICE_X53Y167.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_14_11 : SLICE_X29Y171.
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(22) : SLICE_X23Y153.
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(4) : SLICE_X23Y159.
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(34) : SLICE_X30Y152.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(27) : SLICE_X19Y154.
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(62) : SLICE_X67Y160.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(39) : SLICE_X50Y166.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(47) : SLICE_X55Y167.
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(55) : SLICE_X65Y158.
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(48) : SLICE_X58Y168.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(57) : SLICE_X65Y163.
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(59) : SLICE_X63Y161.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_8_9 : SLICE_X71Y174.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_9_9 : SLICE_X24Y172.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<5>
+: SLICE_X63Y166.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(2)7 : SLICE_X58Y86.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(3)7 : SLICE_X58Y87.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(58) : SLICE_X62Y164.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(8) : SLICE_X23Y169.
+ nf2_core/mac_groups[1].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg_mux0000(26)112 : SLICE_X69Y8.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_15_39 : SLICE_X50Y167.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/gwas.wsts/ram_full_fb_i : SLICE_X24Y161.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[6].cla_8bit/C(8)_bdd10 :
+SLICE_X58Y164.
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/mac_tx_ack_out_reg_next112 : SLICE_X22Y4.
+ nf2_core/mac_groups[1].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg(11) : SLICE_X68Y7.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/r2addr(0)_1 : SLICE_X36Y160.
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next_or000117 : SLICE_X27Y11.
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/conf_tx_no_gen_crc_reg : SLICE_X73Y11.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[0].cla_8bit/C(8)_bdd2 : SLICE_X26Y169.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_bin<3> : SLICE_X27Y160.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(0) : SLICE_X26Y167.
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_state_FSM_FFd9 : SLICE_X27Y10.
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next_or000132 : SLICE_X72Y14.
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter(8) : SLICE_X26Y10.
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter(9) : SLICE_X73Y12.
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter(7) : SLICE_X72Y13.
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter(5) : SLICE_X73Y10.
+ nf2_core/user_data_path/arm_datapath/EXMEM_regWrite_o : SLICE_X38Y166.
+ nf2_core/cpci_bus/pci2net_fifo/BU2/U0/grf.rf/gcx.clkx/wr_pntr_gc_asreg<0> : SLICE_X17Y150.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.rd/rpntr/count_d1<0> : SLICE_X20Y164.
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter(3) : SLICE_X26Y11.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/rstblk/rd_rst_asreg_d1 : SLICE_X21Y160.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.rd/gr1.rfwft/curr_fwft_state_FSM_FFd1 : SLICE_X22Y168.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/rstblk/wr_rst_reg<0> : SLICE_X27Y161.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d1<2> : SLICE_X26Y160.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count<2> : SLICE_X26Y163.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<3> : SLICE_X28Y163.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/rstblk/wr_rst_asreg_d2 : SLICE_X28Y159.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_0 : SLICE_X19Y153.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_1 : SLICE_X32Y155.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_2 : SLICE_X21Y159.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_4 : SLICE_X40Y161.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_6 : SLICE_X59Y160.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_13 : SLICE_X30Y168.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_14 : SLICE_X38Y171.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_17 : SLICE_X45Y167.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_19 : SLICE_X60Y168.
+ nf2_core/sram64.sram_arbiter/cnet_sram_sm/rd_1_data(7) : SLICE_X4Y96.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<0> : SLICE_X19Y162.
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(18) : SLICE_X20Y156.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/wr_pntr_gc_asreg_d1<0> : SLICE_X20Y159.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(17) : SLICE_X22Y160.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d3<3> : SLICE_X22Y163.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/rstblk/rd_rst_reg<1> : SLICE_X23Y158.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_15_9 : SLICE_X23Y165.
+ nf2_core/cpci_bus/cpci_rd_data_nxt(20) : SLICE_X23Y166.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_10_1 : SLICE_X23Y168.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d2<1> : SLICE_X24Y163.
+ nf2_core/user_data_path/arm_datapath/IDEX_signExtended_o(6) : SLICE_X24Y164.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_15_1 : SLICE_X22Y167.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(2) : SLICE_X26Y165.
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(9) : SLICE_X25Y167.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_5_11 : SLICE_X25Y171.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(3) : SLICE_X26Y161.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_8_1 : SLICE_X27Y166.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_10 : SLICE_X25Y168.
+ nf2_core/cpci_bus/cpci_rd_data_nxt(23) : SLICE_X27Y173.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_1_9 : SLICE_X29Y172.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/rstblk/rd_rst_reg<0> : SLICE_X28Y164.
+ nf2_core/cpci_bus/cpci_rd_data_nxt(29) : SLICE_X27Y171.
+ nf2_core/cpci_bus/cpci_rd_data_nxt(11) : SLICE_X29Y170.
+ nf2_core/user_data_path/arm_datapath/IDEX_signExtended_o(2) : SLICE_X27Y168.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_6_11 : SLICE_X27Y167.
+ nf2_core/user_data_path/arm_datapath/IDEX_signExtended_o(3) : SLICE_X26Y164.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(16) : SLICE_X26Y166.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/C(4)(0) : SLICE_X32Y162.
+ nf2_core/user_data_path/arm_datapath/pipe_ID_EX/ReadData1_o_1_REPLICA_22 : SLICE_X28Y169.
+ nf2_core/sram64.sram_arbiter/cnet_sram_sm/rd_0_data(40) : SLICE_X32Y73.
+ nf2_core/user_data_path/arm_datapath/IDEX_aluCtrl_o(7) : SLICE_X28Y170.
+ nf2_core/user_data_path/arm_datapath/reset_3 : SLICE_X39Y165.
+ nf2_core/core_256kb_0_reg_addr(249) : SLICE_X40Y75.
+ nf2_core/core_256kb_0_reg_addr(253) : SLICE_X41Y77.
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(43) : SLICE_X50Y168.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_21 : SLICE_X56Y169.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(41) : SLICE_X54Y166.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(44) : SLICE_X57Y169.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_bin<8> :
+SLICE_X56Y165.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(41) : SLICE_X59Y166.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(49) : SLICE_X58Y166.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_7 : SLICE_X59Y161.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg_d1<
+2> : SLICE_X60Y162.
+ nf2_core/user_data_path/arm_datapath/MEMWB_DataMem_o(48) : SLICE_X61Y162.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg_d1<
+3> : SLICE_X60Y165.
+ nf2_core/user_data_path/arm_datapath/MEMWB_DataMem_o(40) : SLICE_X61Y164.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg_d1<
+1> : SLICE_X60Y160.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg_d1<
+0> : SLICE_X60Y164.
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(47) : SLICE_X61Y167.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(5)28_1 : SLICE_X62Y55.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(7)26 : SLICE_X62Y98.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(5)26 : SLICE_X62Y99.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_1_55 : SLICE_X64Y159.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_8_42 : SLICE_X62Y161.
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(58) : SLICE_X62Y160.
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(60) : SLICE_X63Y163.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(60) : SLICE_X63Y162.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(12)7 : SLICE_X88Y92.
+
+
+The following Components are new/changed.
+-----------------------------------------
+ nf2_core/cpci_bus/pci2net_fifo/BU2/U0/grf.rf/rstblk/rd_rst_asreg_d2 : SLICE_X17Y144.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_8_61 : SLICE_X68Y160.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_9_17 : SLICE_X11Y147.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_10_60 : SLICE_X73Y168.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_12_27 : SLICE_X10Y140.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(0)13 : SLICE_X39Y72.
+ nf2_core/core_reg_wr_data(3) : SLICE_X23Y104.
+ nf2_core/core_reg_wr_data(5) : SLICE_X26Y121.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(42) : SLICE_X52Y166.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(47) : SLICE_X55Y166.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(2)26 : SLICE_X79Y91.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(2) : SLICE_X27Y169.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(4) : SLICE_X26Y168.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(60) : SLICE_X62Y158.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(53) : SLICE_X54Y152.
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(3) : SLICE_X31Y164.
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(4) : SLICE_X28Y161.
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(5) : SLICE_X30Y169.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(7) : SLICE_X31Y168.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[3].cla_8bit/C(8)_bdd10 :
+SLICE_X26Y158.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/alu_o(1)1_1 : SLICE_X35Y166.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/N71 : SLICE_X111Y22.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(10)_SW0_2 : SLICE_X115Y10.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(11)_SW0_2 : SLICE_X95Y61.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/N55 : SLICE_X56Y54.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/N55 : SLICE_X5Y124.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(10)_2 : SLICE_X53Y52.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(10)_2 : SLICE_X100Y30.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(11)_2 : SLICE_X3Y129.
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(30) : SLICE_X23Y163.
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(22) : SLICE_X23Y153.
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(34) : SLICE_X30Y152.
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(62) : SLICE_X67Y160.
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(55) : SLICE_X65Y158.
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(48) : SLICE_X58Y168.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_8_9 : SLICE_X71Y174.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<5>
+: SLICE_X63Y166.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(2)7 : SLICE_X58Y86.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(3)7 : SLICE_X58Y87.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_19 : SLICE_X60Y168.
+ nf2_core/sram64.sram_arbiter/cnet_sram_sm/rd_1_data(7) : SLICE_X4Y96.
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(18) : SLICE_X20Y156.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/wr_pntr_gc_asreg_d1<0> : SLICE_X20Y159.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(17) : SLICE_X22Y160.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(3) : SLICE_X26Y161.
+ nf2_core/cpci_bus/cpci_rd_data_nxt(29) : SLICE_X27Y171.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(16) : SLICE_X26Y166.
+ nf2_core/user_data_path/arm_datapath/pipe_ID_EX/ReadData1_o_1_REPLICA_22 : SLICE_X28Y169.
+ nf2_core/sram64.sram_arbiter/cnet_sram_sm/rd_0_data(40) : SLICE_X32Y73.
+ nf2_core/core_256kb_0_reg_addr(249) : SLICE_X40Y75.
+ nf2_core/core_256kb_0_reg_addr(253) : SLICE_X41Y77.
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(43) : SLICE_X50Y168.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_21 : SLICE_X56Y169.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(44) : SLICE_X57Y169.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(41) : SLICE_X59Y166.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(49) : SLICE_X58Y166.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg_d1<
+1> : SLICE_X60Y160.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(5)28_1 : SLICE_X62Y55.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(7)26 : SLICE_X62Y98.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(5)26 : SLICE_X62Y99.
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(58) : SLICE_X62Y160.
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(60) : SLICE_X63Y163.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(12)7 : SLICE_X88Y92.
+
+
+The following Nets were re-routed.
+----------------------------------
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_12_17.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_8_17.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_9_17.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0000(17).
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/rstblk/wr_rst_asreg.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/rstblk/wr_rst_asreg_d1.
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next_or00012.
+ nf2_core/user_data_path/arm_datapath/MEMWB_regWrite_o.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(9).
+ nf2_core/user_data_path/output_queues/input_fifo_data_out(32).
+ nf2_core/user_data_path/arm_datapath/IFID_CPU_instr(20).
+ nf2_core/core_reg_wr_data(3).
+ nf2_core/core_reg_wr_data(9).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/N461.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0000(0).
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/rstblk/rd_rst_reg<0>.
+ nf2_core/user_data_path/output_queues/input_fifo_data_out(28).
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/N18.
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter(0).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64_rx_fifo_din(7).
+ nf2_core/user_data_path/arm_datapath/IFID_REGMux_out(2).
+ nf2_core/user_data_path/arm_datapath/IFID_REGMux_out(0).
+ nf2_core/user_data_path/arm_datapath/IFID_REGMux_out(3).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_14_42.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_10_42.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_11_42.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_8_42.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_5_42.
+ nf2_core/user_data_path/arm_datapath/DataMemory_WBMuxOut(60).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_0_42.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_1_42.
+ nf2_core/user_data_path/arm_datapath/DataMemory_WBMuxOut(51).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_13_not0001.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/rstblk/wr_rst_reg<0>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d3<1>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/wr_pntr_gc<0>.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_6_51.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_14_not0001.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_0_51.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0001(44).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_9_not0001.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0001(6).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_10_60.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_11_60.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_8_60.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_9_60.
+ nf2_core/core_256kb_0_reg_wr_data(147).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_0_60.
+ nf2_core/nf2_dma/nf2_dma_regs/control_reg(24).
+ nf2_core/mac_groups[1].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg(11).
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(6)32.
+ nf2_core/core_reg_wr_data(4).
+ nf2_core/core_reg_wr_data(5).
+ nf2_core/user_data_path/output_queues/remove_pkt/N7.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_8_61.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_9_61.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(63).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_2_61.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_0_61.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_15_47.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_8_47.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0001(47).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_2_55.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_3_55.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_1_55.
+ nf2_core/user_data_path/arm_datapath/aluOperationSelect(1).
+ nf2_core/user_data_path/arm_datapath/aluOperationSelect(3).
+ nf2_core/user_data_path/arm_datapath/aluOperationSelect(0).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/alu_o_or0000.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/rstblk/wr_rst_reg<0>.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_14_56.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_13_56.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_0_49.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0001(7).
+ nf2_core/core_256kb_0_reg_addr(67).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_0_57.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0001(5).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_7_5.
+ nf2_core/core_256kb_0_reg_wr_data(149).
+ nf2_core/core_256kb_0_reg_wr_data(158).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_14_8.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_15_8.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_10_8.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0001(8).
+ nf2_core/core_256kb_0_reg_addr(76).
+ nf2_core/core_256kb_0_reg_addr(74).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_14_58.
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/tx_state_FSM_FFd3-In4.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_14_9.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_15_9.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_10_9.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_11_9.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_8_9.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_9_9.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0001(9).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_4_9.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/mem/dout_mem<7>.
+ nf2_core/cpci_bus/cpci_rd_data_nxt(7).
+ nf2_core/user_data_path/arm_datapath/DataMemory_WBMuxOut(8).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_2_9.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_1_9.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_15_59.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_6_59.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0000(19).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_12_27.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0000(2).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0000(28).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_0_20.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_14_37.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_9_3.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0000(3).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_15_not0001.
+ nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/U0/gen_as.fgas/DEBUG_RAM_WR_EN.
+ nf2_core/user_data_path/arm_datapath/DataMemory_WBMuxOut(38).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_0_38.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_13_30.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_5_not0001.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0000(46).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_15_39.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_7_39.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_1_39.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_10_31.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_11_31.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_8_31.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0000(31).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_3_31.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_12_24.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0000(4).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d3<5>.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0000(55).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(5)12.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(14)37.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(5)17.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d3<7>.
+ nf2_core/user_data_path/arm_datapath/DataMemory_WBMuxOut(61).
+ nf2_core/user_data_path/arm_datapath/DataMemory_WBMuxOut(49).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0000(34).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0000(7).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0000(5).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0000(42).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/N551.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_9_35.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d3<8>.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/r2addr(0)_1.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0001(14).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0000(8).
+ nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/U0/gen_as.fgas/normgen.flblk/clkmod/cx.rdx/pntr
+_gc_x2<7>.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0001(15).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0000(9).
+ nf2_core/user_data_path/arm_datapath/DataMemory_WBMuxOut(1).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0000(44).
+ nf2_core/nf2_dma/nf2_dma_regs/addr_good8.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0001(16).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0001(0).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0000(6).
+ nf2_core/sram64.sram_arbiter/cnet_sram_sm/rd_0_data(0).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0001(17).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_14_1.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_15_1.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_10_1.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_11_1.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_8_1.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0001(1).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_4_1.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_2_1.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0000(60).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(57).
+ nf2_core/mac_groups[3].nf2_mac_grp/tx_queue/tx_fifo_64.gmac_tx_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d1<4>.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(9)39.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(2)32.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/tx_byte_cnt_delta(6).
+ nf2_core/user_data_path/arm_datapath/module_regs/software_regs(47).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_tx_queue/tx_fifo_data_out(8).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(23).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(23).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[2].cla_8bit/C(8)_bdd0.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(22).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(22).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[2].cla_8bit/C(8)_bdd2.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/C(3)(0).
+ nf2_core/core_256kb_0_reg_wr_data(151).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/add_op_i.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(22).
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o.
+ nf2_core/user_data_path/output_queues/remove_pkt/header_parse_state_next14.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(31).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(24).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(24).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(25).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(41).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(26).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(34).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(35).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(36).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(44).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[5].cla_8bit/C(8)_bdd6.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(44).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(44).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(37).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(37).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(38).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(39).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/rstblk/wr_rst_comb.
+ nf2_core/user_data_path/arm_datapath/IFID_CPU_instr(11).
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/mem/dout_mem<10>.
+ nf2_core/cpci_bus/cpci_rd_data_nxt(10).
+ nf2_core/mac_groups[0].nf2_mac_grp/tx_pkt_byte_cnt(10).
+ nf2_core/cpu_q_dma_rd_data(2)(2).
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/mem/dout_mem<11>.
+ nf2_core/cpci_bus/cpci_rd_data_nxt(11).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/tx_fifo_data_out(27).
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/mem/dout_mem<13>.
+ nf2_core/cpci_bus/cpci_rd_data_nxt(13).
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/mem/dout_mem<21>.
+ nf2_core/cpci_bus/cpci_rd_data_nxt(21).
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_state_FSM_FFd9.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/mem/dout_mem<31>.
+ nf2_core/cpci_bus/cpci_rd_data_nxt(31).
+ nf2_core/out_data(7)(0).
+ nf2_core/in_data(4)(41).
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/mem/dout_mem<16>.
+ nf2_core/cpci_bus/cpci_rd_data_nxt(16).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg_d1<
+1>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_bin_xor0002.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg_d1<
+4>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg_d1<
+2>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg_d1<
+3>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<4>.
+ nf2_core/user_data_path/arm_datapath/reset_3.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/r1data_o_and0000.
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut1(9).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(9).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/mem/dout_mem<18>.
+ nf2_core/user_data_path/arm_datapath/IDEX_mem2Reg_o.
+ nf2_core/mac_groups[2].nf2_mac_grp/tx_pkt_byte_cnt(0).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(31).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[3].cla_8bit/C(8)_bdd0.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(30).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(30).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[3].cla_8bit/C(8)_bdd2.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/C(4)(0).
+ nf2_core/mac_groups[0].nf2_mac_grp/tx_pkt_byte_cnt(6).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gl0.wr/gwas.wsts/comp1.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/N55.
+ nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_pkt_good_sync/ackA.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/N55.
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/mac_tx_ack_out_reg_next137.
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/mac_tx_ack_out_reg_next112.
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter(8).
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/N5.
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter(8).
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter(9).
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter(7).
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter(13).
+ nf2_core/nf2_reg_grp_u/cpu_rd_data(22).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(7).
+ nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/U0/gen_as.fgas/normgen.flblk/clkmod/cx.rdx/pntr
+_gc<0>.
+ nf2_core/nf2_reg_grp_u/cpu_rd_data(24).
+ nf2_core/in_data(0)(36).
+ nf2_core/mac_groups[1].nf2_mac_grp/rx_pkt_word_cnt(4).
+ nf2_core/user_data_path/arm_datapath/IDEX_aluCtrl_o(7).
+ nf2_core/user_data_path/arm_datapath/aluOperationSelect(2).
+ nf2_core/user_data_path/arm_datapath/IDEX_regWrite_o.
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(1).
+ nf2_core/user_data_path/arm_datapath/MEMWB_DataMem_o(1).
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(9).
+ nf2_core/user_data_path/arm_datapath/MEMWB_DataMem_o(9).
+ nf2_core/user_data_path/arm_datapath/DataMemory_WBMuxOut(9).
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(11).
+ nf2_core/user_data_path/arm_datapath/MEMWB_DataMem_o(11).
+ nf2_core/user_data_path/arm_datapath/DataMemory_WBMuxOut(11).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_0_11.
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(30).
+ nf2_core/user_data_path/arm_datapath/MEMWB_DataMem_o(30).
+ nf2_core/user_data_path/arm_datapath/MEMWB_DataMem_o(14).
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(31).
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(40).
+ nf2_core/user_data_path/arm_datapath/MEMWB_DataMem_o(40).
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(50).
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(42).
+ nf2_core/user_data_path/arm_datapath/MEMWB_DataMem_o(42).
+ nf2_core/user_data_path/arm_datapath/DataMemory_WBMuxOut(42).
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(34).
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(43).
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(27).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(35).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[4].cla_8bit/C(8)_bdd8.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(34).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[4].cla_8bit/C(8)_bdd10.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[4].cla_8bit/C(8)_bdd6.
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(52).
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(44).
+ nf2_core/user_data_path/arm_datapath/MEMWB_DataMem_o(45).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(33).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(33).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[4].cla_8bit/C(8)_bdd12.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(32).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(32).
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(54).
+ nf2_core/user_data_path/arm_datapath/MEMWB_DataMem_o(54).
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(46).
+ nf2_core/user_data_path/arm_datapath/MEMWB_DataMem_o(46).
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(55).
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(39).
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(56).
+ nf2_core/user_data_path/arm_datapath/MEMWB_DataMem_o(48).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N100.
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(58).
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(59).
+ nf2_core/mac_groups[0].nf2_mac_grp/tx_pkt_word_cnt(8).
+ nf2_core/user_data_path/arm_datapath/module_regs/hw_reg_data_out(19).
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/rstblk/rd_rst_asreg_d1.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/rstblk/rd_rst_asreg.
+ nf2_core/cpci_bus/pci2net_fifo/BU2/U0/grf.rf/rstblk/rd_rst_asreg_d1.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/rd_data_b(18).
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/rstblk/wr_rst_reg<1>.
+ nf2_core/sram64.sram_arbiter/cnet_sram_sm/wr_data_early(13).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/control_reg(13).
+ nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/U0/gen_as.fgas/normgen.flblk/clkmod/cx.rdx/pntr
+_gc_x<7>.
+ nf2_core/sram64.sram_arbiter/cnet_sram_sm/wr_data_early(38).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N92.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N90.
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_in(9).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0001(2).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/r2data_o_and0000.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(2).
+ nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_dout(4).
+ nf2_core/user_data_path/oq_in_reg_addr(20).
+ nf2_core/sram64.sram_arbiter/cnet_sram_sm/rd_0_data(54).
+ nf2_core/user_data_path/output_queues/remove_pkt/out_wr_selected(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N98.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N96.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d1<5>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d2<9>.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/mem/dout_mem<11>.
+ nf2_core/cpu_q_dma_rd_data(0)(21).
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_plus1_addsub0000(6).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(21).
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(8)32.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d1<6>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d1<7>.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/tx_fifo_data_out(20).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0000(16).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut1(16).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(16).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(41).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(25).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(50).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(18).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(51).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(60).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[5].cla_8bit/C(8)_bdd12.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(40).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(40).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/C(5)(0).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[5].cla_8bit/C(8)_bdd10.
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut1(44).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(28).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(61).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(53).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(45).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(29).
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d1<0>.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(11).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut1(55).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(55).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(39).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(57).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(22).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0001(11).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut2(11).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(11).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(14).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0001(20).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut2(20).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(20).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(21).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(23).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(40).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(17).
+ nf2_core/cpu_q_dma_rd_data(0)(28).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(19).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(27).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0001(28).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut2(28).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(28).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(0)62.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(46).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(63).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(53).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N88.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N94.
+ nf2_core/cpci_bus/n2p_fifo_empty.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg_d1<
+5>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg_d1<
+6>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg_d1<
+8>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg_d1<
+7>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_bin_xor0003.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_bin<4>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_bin<5>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_bin<8>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_bin<7>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d2<6>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d2<7>.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(56).
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d1<1>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d2<1>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/N79.
+ nf2_core/sram64.sram_arbiter/cnet_sram_sm/wr_data_ph1(56).
+ nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/U0/gen_as.fgas/normgen.flblk/thrmod/flogic/comp
+_full2.
+ nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_wr_en.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(8)39.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(9)39.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(1)223.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(5)12.
+ nf2_core/user_data_path/arm_datapath/MEMWB_DataMem_o(29).
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d2<0>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(5)17.
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(4).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(12)13.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(19).
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(5).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(27).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/alu_o_or0001.
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(24).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_1_11.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(24).
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(0).
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(3).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0000(14).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0000(15).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut1(14).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(14).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut1(15).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(15).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut1(17).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(17).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(21).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(27).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(27).
+ nf2_core/user_data_path/arm_datapath/DataMem_o(29).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[3].cla_8bit/C(8)_bdd8.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(26).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[3].cla_8bit/C(8)_bdd10.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[3].cla_8bit/C(8)_bdd6.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d2<3>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_bin<3>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d2<2>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/gwas.wsts/ram_full_i_or000054.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(20).
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc<2>.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(18).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(18).
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<2>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/rstblk/rd_rst_reg<1>.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(19).
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_xor0000.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/mem/dout_mem<22>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/mem/dout_mem<19>.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(15).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[1].cla_8bit/C(8)_bdd0.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(14).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[1].cla_8bit/C(8)_bdd2.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/C(2)(0).
+ nf2_core/cpci_bus/cpci_rd_data_nxt(22).
+ nf2_core/cpci_bus/cpci_rd_data_nxt(19).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0001(22).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0001(18).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut2(22).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut2(18).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(31).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(29).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[3].cla_8bit/C(8)_bdd4.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(28).
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d1<2>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d1<3>.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[2].cla_8bit/C(8)_bdd4.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(20).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[2].cla_8bit/C(8)_bdd6.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<1>.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(17).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(17).
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg_d1<1>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg_d1<2>.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[2].cla_8bit/C(8)_bdd12.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(16).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[2].cla_8bit/C(8)_bdd10.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc<3>.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(5).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(19).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[2].cla_8bit/C(8)_bdd8.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.rd/gr1.rfwft/empty_fwft_i_or0000.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/rstblk/rd_rst_reg<2>.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(14).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(15).
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.rd/gr1.rfwft/empty_fwft_fb.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_2_11.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0001(12).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut2(6).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(6).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut2(12).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(12).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut1(6).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(6).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut2(14).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(13).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(13).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[1].cla_8bit/C(8)_bdd4.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(12).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(12).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[1].cla_8bit/C(8)_bdd6.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_12_11.
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut1(2).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(2).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut1(3).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(3).
+ nf2_core/user_data_path/arm_datapath/ALU_result(12).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(12).
+ nf2_core/user_data_path/arm_datapath/ALU_result(13).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(13).
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d3<3>.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0001(3).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut1(7).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(7).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut2(3).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(3).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(13).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_11_11.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0001(13).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut2(13).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut2(15).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_4_11.
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/N23.
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next_or000132.
+ nf2_core/user_data_path/arm_datapath/DataMem_o(14).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(7).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[0].cla_8bit/C(8)_bdd0.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(6).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[0].cla_8bit/C(8)_bdd2.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/C(1)(0).
+ nf2_core/user_data_path/arm_datapath/IFID_CPU_instr(4).
+ nf2_core/user_data_path/arm_datapath/signExtend/N01.
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut1(5).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(5).
+ nf2_core/user_data_path/arm_datapath/immediate(4).
+ nf2_core/user_data_path/arm_datapath/IDEX_signExtended_o(4).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0001(4).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut1(4).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(4).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut2(4).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(4).
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/mem/dout_mem<26>.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(11).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(11).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[1].cla_8bit/C(8)_bdd8.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(10).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(10).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[1].cla_8bit/C(8)_bdd10.
+ nf2_core/cpci_bus/cpci_rd_data_nxt(26).
+ nf2_core/user_data_path/arm_datapath/IFID_CPU_instr(9).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0000(11).
+ nf2_core/user_data_path/arm_datapath/immediate(9).
+ nf2_core/user_data_path/arm_datapath/IDEX_signExtended_o(9).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut1(11).
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next_or0001.
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next_addsub0000(0).
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next_addsub0000(2).
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next(0).
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next(2).
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter(2).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut2(5).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(5).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut2(7).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(7).
+ nf2_core/user_data_path/arm_datapath/IFID_CPU_instr(5).
+ nf2_core/user_data_path/arm_datapath/IFID_CPU_instr(7).
+ nf2_core/user_data_path/arm_datapath/immediate(5).
+ nf2_core/user_data_path/arm_datapath/IDEX_signExtended_o(5).
+ nf2_core/user_data_path/arm_datapath/immediate(7).
+ nf2_core/user_data_path/arm_datapath/IDEX_signExtended_o(7).
+ nf2_core/user_data_path/arm_datapath/IFID_CPU_instr(10).
+ nf2_core/user_data_path/arm_datapath/immediate(10).
+ nf2_core/user_data_path/arm_datapath/IDEX_signExtended_o(10).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut1(8).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(8).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(1).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(9).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[1].cla_8bit/C(8)_bdd12.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(8).
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_state_FSM_FFd9-In48.
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_state_FSM_FFd9-In10.
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_state_FSM_FFd9-In23_2.
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter(3).
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_state_FSM_FFd9-In50.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/mem/dout_mem<24>.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(1).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(1).
+ nf2_core/user_data_path/arm_datapath/IDEX_signExtended_o(1).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(1).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[0].cla_8bit/res_o(1)1_1.
+ nf2_core/cpci_bus/cpci_rd_data_nxt(24).
+ nf2_core/cpci_bus/p2n_addr(14).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0000(1).
+ nf2_core/user_data_path/arm_datapath/IFID_CPU_instr(8).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut1(1).
+ nf2_core/user_data_path/arm_datapath/immediate(8).
+ nf2_core/user_data_path/arm_datapath/IDEX_signExtended_o(8).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0000(10).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0000(13).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut1(10).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut1(13).
+ nf2_core/user_data_path/arm_datapath/module_regs/.generic_hw_regs/reg_ack_out_and000039.
+ nf2_core/cpci_bus/p2n_addr(26).
+ nf2_core/cpci_bus/p2n_addr(18).
+ nf2_core/user_data_path/arm_datapath/MainControlUnit/N6.
+ nf2_core/user_data_path/arm_datapath/immediate(1).
+ nf2_core/user_data_path/arm_datapath/ALUsrc.
+ nf2_core/user_data_path/arm_datapath/immediate(11).
+ nf2_core/user_data_path/arm_datapath/IDEX_signExtended_o(11).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut2(8).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(8).
+ nf2_core/cpci_bus/cpci_rd_data_nxt(20).
+ nf2_core/cpci_bus/cpci_rd_data_nxt(12).
+ nf2_core/cpci_bus/p2n_wr_data(13).
+ nf2_core/user_data_path/arm_datapath/signExtend/Mmux_immediate1310.
+ nf2_core/user_data_path/arm_datapath/signExtend/N2.
+ nf2_core/cpci_bus/cpci_rd_data_nxt(30).
+ nf2_core/cpci_bus/cpci_rd_data_nxt(14).
+ nf2_core/core_reg_wr_data(0).
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(6)9.
+ nf2_core/user_data_path/arm_datapath/module_regs/.generic_hw_regs/reg_ack_out_and00008.
+ nf2_core/cpci_bus/cpci_rd_data_nxt(23).
+ nf2_core/cpci_bus/cpci_rd_data_nxt(25).
+ nf2_core/user_data_path/arm_datapath/IFID_CPU_instr(0).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut1(0).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(0).
+ nf2_core/user_data_path/arm_datapath/immediate(0).
+ nf2_core/user_data_path/arm_datapath/IDEX_signExtended_o(0).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0000(12).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut2(0).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(0).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut1(12).
+ nf2_core/cpci_bus/cpci_rd_data_nxt(27).
+ nf2_core/cpci_bus/cpci_rd_data_nxt(28).
+ nf2_core/cpci_bus/cpci_rd_data_nxt(29).
+ nf2_core/user_data_path/arm_datapath/ALU_result(3).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(3).
+ nf2_core/user_data_path/arm_datapath/ALU_result(5).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/alu_o(1)1_1.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[0].cla_8bit/C(8)_bdd12.
+ nf2_core/user_data_path/arm_datapath/ALU_result(1).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_6_12.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_6_13.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_7_13.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(3)9.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(5)9.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(2)9.
+ nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/rx_fifo_dout(51).
+ nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_dout(6).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d3<4>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d3<3>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d3<0>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d3<2>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.rd/rpntr/count_d1<0>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/mem/dout_mem<12>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/mem/dout_mem<14>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/mem/dout_mem<20>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/mem/dout_mem<23>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/mem/dout_mem<25>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/mem/dout_mem<27>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/mem/dout_mem<28>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/mem/dout_mem<29>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/mem/dout_mem<30>.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(0)9.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(7)9.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(1)9.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(4)9.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(9)9.
+ nf2_core/out_data(3)(12).
+ nf2_core/user_data_path/output_queues/remove_pkt/output_fifo64.output_fifos[0].gmac_tx_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/
+count_d1<1>.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(16).
+ nf2_core/user_data_path/arm_datapath/EXMEM_writeData_mem_o(5).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/rd_data_b(2).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/rd_data_b(3).
+ nf2_core/user_data_path/arm_datapath/IFID_CPU_instr(2).
+ nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/U0/gen_as.fgas/normgen.flblk/thrmod/pflogic/dif
+f_pntr_mux0000<8>.
+ nf2_core/user_data_path/arm_datapath/IFID_CPU_instr(3).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/mem/dout_mem<21>.
+ nf2_core/sram64.sram_arbiter/cnet_sram_sm/rd_0_data(40).
+ nf2_core/sram64.sram_arbiter/cnet_sram_sm/rd_0_data(42).
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(8)9.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_plus1_addsub0000(12).
+ nf2_core/user_data_path/output_queues/remove_pkt/lo_addr(13).
+ nf2_core/user_data_path/output_queues/oq_regs/num_pkts_dropped_reg_rd_data(3).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/rd_data_b(22).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/rd_data_b(24).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_stored_reg/rd_data_b(11).
+ nf2_core/user_data_path/arm_datapath/EXMEM_writeData_mem_o(10).
+ nf2_core/user_data_path/arm_datapath/EXMEM_writeData_mem_o(11).
+ nf2_core/user_data_path/arm_datapath/EXMEM_writeData_mem_o(13).
+ nf2_core/user_data_path/arm_datapath/EXMEM_writeData_mem_o(24).
+ nf2_core/user_data_path/arm_datapath/EXMEM_writeData_mem_o(25).
+ nf2_core/user_data_path/arm_datapath/DataMem_o(27).
+ nf2_core/user_data_path/output_queues/input_fifo_data_out(17).
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/N3.
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/conf_tx_no_gen_crc_reg.
+ nf2_core/user_data_path/arm_datapath/DataMem_o(40).
+ nf2_core/user_data_path/arm_datapath/DataMem_o(45).
+ nf2_core/user_data_path/arm_datapath/DataMem_o(46).
+ nf2_core/user_data_path/arm_datapath/DataMem_o(48).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(10).
+ nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/U0/gen_as.fgas/normgen.flblk/thrmod/pflogic/dif
+f_pntr_mux0000<3>.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_eval_full/full_pkts_in_q_0_or0000.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/N71.
+ nf2_core/user_data_path/arm_datapath/IFID_CPU_instr(14).
+ nf2_core/user_data_path/arm_datapath/IDEX_writeReg_o(0).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_13_not0001_bdd2.
+ nf2_core/user_data_path/arm_datapath/EXMEM_writeReg_o(0).
+ nf2_core/user_data_path/arm_datapath/EXMEM_mem2Reg_o.
+ nf2_core/user_data_path/arm_datapath/IDEX_writeReg_o(1).
+ nf2_core/user_data_path/arm_datapath/IDEX_writeReg_o(3).
+ nf2_core/user_data_path/arm_datapath/EXMEM_regWrite_o.
+ nf2_core/user_data_path/arm_datapath/EXMEM_writeReg_o(3).
+ nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/N36.
+ nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_wr_en14.
+ nf2_core/user_data_path/arm_datapath/IFID_CPU_instr(15).
+ nf2_core/user_data_path/arm_datapath/IDEX_writeReg_o(2).
+ nf2_core/user_data_path/arm_datapath/EXMEM_writeReg_o(1).
+ nf2_core/user_data_path/arm_datapath/EXMEM_writeReg_o(2).
+ nf2_core/sram64.sram_arbiter/sram_reg_access/wr_data(8).
+ nf2_core/cpu_q_dma_rd_data(3)(20).
+ nf2_core/cpu_q_dma_rd_data(1)(21).
+ nf2_core/core_256kb_0_reg_addr(249).
+ nf2_core/core_256kb_0_reg_addr(251).
+ nf2_core/core_256kb_0_reg_addr(250).
+ nf2_core/core_256kb_0_reg_addr(253).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/tx_pkt_stored_delta(0).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/tx_pkt_stored_delta(0).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/tx_pkt_stored_delta(0).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/tx_pkt_stored_delta(0).
+ nf2_core/sram64.sram_arbiter/sram_reg_access/wr_data(17).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(37).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(39).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[4].cla_8bit/C(8)_bdd4.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[4].cla_8bit/C(8)_bdd2.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(43).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(38).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_7_11.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gl0.wr/gwas.gpf.wrpf/prog_ful
+l_i_mux00033.
+ nf2_core/user_data_path/arm_datapath/ALU_result(44).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(44).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(42).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(5)12.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(47).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[4].cla_8bit/C(8)_bdd0.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_8_10.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N82.
+ nf2_core/user_data_path/arm_datapath/MEMWB_DataMem_o(51).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(15)31.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(15)13.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(15)26.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N84.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(12)31.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(12)26.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(13)31.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(13)13.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(13)26.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<8>.
+ nf2_core/user_data_path/arm_datapath/ALU_result(50).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(50).
+ nf2_core/user_data_path/arm_datapath/ALU_result(42).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(42).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/rstblk/wr_rst_asreg.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/rstblk/wr_rst_asreg_d1.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(45).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[5].cla_8bit/C(8)_bdd4.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[5].cla_8bit/C(8)_bdd2.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/rstblk/wr_rst_asreg_d2.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(47).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(47).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[5].cla_8bit/C(8)_bdd0.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(46).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(46).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/C(6)(0).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(1)223.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(2)31.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(2)13.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(2)26.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(3)31.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(3)13.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(3)26.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(10)31.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(10)13.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(10)26.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(11)31.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(11)13.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(11)26.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(7)31.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(7)13.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(7)26.
+ nf2_core/user_data_path/arm_datapath/MEMWB_DataMem_o(61).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(52).
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(47).
+ nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_pkt_dropped_sync/ackB_d1.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(47).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(1)31.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(1)13.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(1)26.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(55).
+ nf2_core/user_data_path/arm_datapath/ALU_result(54).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(54).
+ nf2_core/user_data_path/arm_datapath/ALU_result(55).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(51).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[6].cla_8bit/C(8)_bdd8.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(50).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[6].cla_8bit/C(8)_bdd10.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[6].cla_8bit/C(8)_bdd6.
+ nf2_core/user_data_path/arm_datapath/ALU_result(51).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(51).
+ nf2_core/user_data_path/arm_datapath/ALU_result(52).
+ nf2_core/user_data_path/arm_datapath/ALU_result(48).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(48).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(48).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(5)31.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(5)13.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(5)26.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(9)31.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(9)13.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(9)26.
+ nf2_core/user_data_path/output_port_lookup/state_nxt14.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(55).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[6].cla_8bit/C(8)_bdd0.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(54).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(54).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[6].cla_8bit/C(8)_bdd2.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/C(7)(0).
+ nf2_core/user_data_path/arm_datapath/ALU_result(49).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(49).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(49).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_bin<6>.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(5)17.
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter(4).
+ nf2_core/sram64.sram_arbiter/cnet_sram_sm/rd_1_data(7).
+ nf2_core/mac_groups[1].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg_mux0000(24)131.
+ nf2_core/mac_groups[1].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg_mux0000(26)112.
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter(5).
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter(6).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(61).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[7].cla_8bit/C(8)_bdd4.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(60).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[7].cla_8bit/C(8)_bdd6.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[7].cla_8bit/C(8)_bdd2.
+ nf2_core/user_data_path/arm_datapath/ALU_result(61).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(61).
+ nf2_core/user_data_path/arm_datapath/ALU_result(62).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(62).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(56).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(59).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(59).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[7].cla_8bit/C(8)_bdd8.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(58).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(58).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[7].cla_8bit/C(8)_bdd10.
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(61).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(60).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(63).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(63).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(62).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(62).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[7].cla_8bit/N01.
+ nf2_core/user_data_path/arm_datapath/ALU_result(63).
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(60).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(57).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(56).
+ nf2_core/user_data_path/arm_datapath/MEMWB_DataMem_o(8).
+ nf2_core/user_data_path/arm_datapath/ALU_result(60).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(48).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(49).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/N77.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/N75.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(58).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d2<8>.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(9)39.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(5)12.
+ nf2_core/user_data_path/arm_datapath/IFID_CPU_instr(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_stored_reg/curr_plus_new_a(10).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg_d1<
+0>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_bin_xor0001.
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData2_o(62).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(58).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(1)223.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_stored_reg/prev_din_a(12).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N102.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<6>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<7>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/wr_pntr_gc<3>.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(5)17.
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut2(9).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(8)39.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/N75.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/N77.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(1)223.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<3>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<5>.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/N79.
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(8).
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(51).
+ nf2_core/user_data_path/arm_datapath/MEMWB_DataMem_o(60).
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(38).
+ nf2_core/user_data_path/arm_datapath/MEMWB_DataMem_o(38).
+ nf2_core/user_data_path/arm_datapath/MEMWB_aluResult_out(49).
+ nf2_core/user_data_path/arm_datapath/MEMWB_DataMem_o(49).
+ nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/U0/gen_as.fgas/debug_wr_pntr_r<11>.
+ nf2_core/user_data_path/output_queues/remove_pkt/remove_state_next(3)121_2.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.rd/gr1.rfwft/curr_fwft_state_FSM_FFd1.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.rd/gr1.rfwft/curr_fwft_state_FSM_FFd2.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_10_10.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/Mcount_tx_pkt_stored_delta.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/Mcount_tx_pkt_stored_delta.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/Mcount_tx_pkt_stored_delta.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_10_13.
+ nf2_core/sram64.sram_arbiter/sram_reg_access/wr_data(13).
+ nf2_core/sram64.sram_arbiter/cnet_sram_sm/wr_data_early_nxt(13).
+ nf2_core/cpci_bus/pci2net_fifo/BU2/U0/grf.rf/gcx.clkx/wr_pntr_gc<2>.
+ nf2_core/user_data_path/arm_datapath/IDEX_signExtended_o(2).
+ nf2_core/user_data_path/arm_datapath/IDEX_signExtended_o(3).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut1(42).
+ nf2_core/user_data_path/arm_datapath/IDEX_ReadData1_o(42).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut1(34).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut1(46).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0001(10).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0001(27).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut2(27).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/_varindex0001(37).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut2(37).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut2(47).
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(11)9.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(12)9.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(13)9.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(14)9.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(15)9.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(16)9.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(17)9.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(18)9.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_plus1_addsub0000(17).
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(17)32.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(17)37.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[6].cla_8bit/C(8)_bdd12.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[6].cla_8bit/C(8)_bdd4.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(53).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc<6>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc<7>.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_5_11.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_6_11.
+ nf2_core/cpci_bus/pci2net_fifo/BU2/U0/grf.rf/rstblk/rd_rst_asreg_d2.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(3).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[0].cla_8bit/C(8)_bdd8.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(2).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[0].cla_8bit/C(8)_bdd10.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[0].cla_8bit/C(8)_bdd6.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(0).
+ nf2_core/user_data_path/arm_datapath/ALU_result(14).
+ nf2_core/nf2_reg_grp_u/cpu_rd_data(29).
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_bin<0>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/gwas.wsts/ram_full_i_or000027.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[5].cla_8bit/C(8)_bdd8.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(43).
+ nf2_core/user_data_path/arm_datapath/ALU_result(46).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(46).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(7)39.
+ nf2_core/nf2_dma/nf2_dma_regs/reg_file_in_addsub0000(9).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(6)31.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(6)13.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(6)26.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(4).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(5).
+ nf2_core/user_data_path/arm_datapath/IDEX_signExtended_o(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/prev_din_a(2).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/inv_op2(52).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/curr_plus_new_a(10).
+ nf2_core/user_data_path/arm_datapath/ALU_result(7).
+ nf2_core/user_data_path/arm_datapath/ALU_result(9).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(9).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[0].cla_8bit/C(8)_bdd4.
+ nf2_core/core_256kb_0_reg_addr(73).
+ nf2_core/device_id_reg/N49.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/wr_pntr_gc_asreg_d1<0>.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[3].cla_8bit/C(8)_bdd12.
+ nf2_core/mac_groups[1].nf2_mac_grp/rx_pkt_dropped.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_a(30).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_a(25).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(34).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(38).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/N55.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(18)63.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/N55.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/N63.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/N63.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/N63.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/N63.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in_addsub0000(10).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(30).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(40).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(43).
+ nf2_core/sram64.sram_arbiter/cnet_sram_sm/rd_1_data(12).
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_14_11.
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(8).
+ nf2_core/user_data_path/arm_datapath/ALU_result(17).
+ nf2_core/user_data_path/arm_datapath/ALU_result(27).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/curr_plus_new_a(14).
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next_addsub0000(3).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_a(22).
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next_addsub0000(4).
+ nf2_core/user_data_path/arm_datapath/ALU_result(39).
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next_addsub0000(8).
+ nf2_core/user_data_path/arm_datapath/ALU_result(47).
+ nf2_core/user_data_path/arm_datapath/ALU_result(57).
+ nf2_core/user_data_path/arm_datapath/EXMEM_aluResult_out(59).
+ nf2_core/user_data_path/arm_datapath/ALU_result(59).
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next_addsub0000(5).
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next_addsub0000(6).
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next_addsub0000(7).
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next_addsub0000(8).
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next_addsub0000(9).
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next_addsub0000(13).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_a(20).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<1>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc<3>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc<5>.
+ nf2_core/mac_groups[0].nf2_mac_grp/rx_queue/.pkt_chk_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc<0>.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/alu_o(0)1_1.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/carry_lookahead_uut/CLA_8BIT_LOOP[0].cla_8bit/Mxor_res_o(0)_Result1_1.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/gwas.wsts/ram_full_fb_i.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_15_11.
+ nf2_core/user_data_path/arm_datapath/ALU_result(58).
+ nf2_core/mac_groups[1].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg(20).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<0>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<2>.
+ nf2_core/user_data_path/arm_datapath/ALU_result(8).
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/Mrom_max_data_length3.
+ nf2_core/mac_groups[3].nf2_mac_grp/disable_crc_gen.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/gwas.wsts/c2/dout_i53.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/gwas.wsts/ram_full_i_or000070_SW0/O.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/gwas.wsts/c2/dout_i26.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/gwas.wsts/ram_full_i_or0000.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.rd/gras.rsts/ram_empty_fb_i.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_hi_reg/prev_din_b(17).
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_state_cmp_eq0019.
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/Mcompar_tx_counter_next_cmp_ne0000_cy(4).
+ nf2_core/mac_groups[1].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg_mux0000(20)146_1.
+ nf2_core/mac_groups[1].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg_mux0000(20).
+ nf2_core/mac_groups[1].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg_mux0000(11).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/Mcount_tx_pkt_stored_delta_xor(0)114.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/Mcount_tx_pkt_stored_delta.
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next_or00017.
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next_or000117.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_dropped_reg/curr_data_a(0).
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/conf_tx_no_gen_crc_reg_next.
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next(13).
+ nf2_core/mac_groups[3].nf2_mac_grp/rx_pkt_byte_cnt(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N104.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg_d1<3>.
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next_or000132.
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next(8).
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next(9).
+ nf2_core/cpci_bus/pci2net_fifo/BU2/U0/grf.rf/gcx.clkx/wr_pntr_gc<0>.
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next(7).
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next(8).
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next(5).
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next(6).
+ nf2_core/cpci_bus/pci2net_fifo/BU2/U0/grf.rf/gcx.clkx/wr_pntr_gc_asreg_d1<0>.
+ nf2_core/cpci_bus/pci2net_fifo/BU2/U0/grf.rf/gcx.clkx/wr_pntr_gc_asreg<0>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/wr_pntr_gc<1>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/wr_pntr_gc<2>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.rd/rpntr/count<0>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/wr_pntr_bin<0>.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(0)67.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc<0>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc<1>.
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next(3).
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/tx_counter_next(4).
+ nf2_core/user_data_path/arm_datapath/signExtend/Mmux_immediate1362.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<0>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/rstblk/rd_rst_asreg_d2.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.rd/gr1.rfwft/curr_fwft_state_FSM_FFd1-In.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.rd/gr1.rfwft/curr_fwft_state_FSM_FFd2-In.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_stored_reg/curr_plus_new_b(29).
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/rstblk/rd_rst_comb.
+ nf2_core/mac_groups[2].nf2_mac_grp/gig_eth_mac/mac_tx/Mrom_max_data_length4.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N86.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/gwas.wsts/ram_almost_full_i_mux000051_2.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count<2>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/rstblk/wr_rst_comb.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg_d1<0>.
+ nf2_core/user_data_path/arm_datapath/RegisterFile/register_13_11.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count<3>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/Mcount_count6.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/Mcount_count9.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<3>.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/rstblk/wr_rst_asreg_d2.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_0.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_1.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_2.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_3.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_4.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_5.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_6.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_7.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_8.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_9.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_10.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_11.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_12.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_13.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_14.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_15.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_16.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_17.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_18.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_19.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_20.
+ nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_21.
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut1(19).
+ nf2_core/cpci_bus/pci2net_fifo/BU2/U0/grf.rf/gcx.clkx/wr_pntr_gc_xor0000.
+ nf2_core/cpci_bus/net2pci_fifo/BU2/U0/grf.rf/gcx.clkx/wr_pntr_gc_asreg<0>.
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut2(17).
+ nf2_core/user_data_path/arm_datapath/immediate(6).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut2(2).
+ nf2_core/user_data_path/arm_datapath/immediate(2).
+ nf2_core/user_data_path/arm_datapath/immediate(3).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut2(16).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut2(1).
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut2(10).
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(10)9.
+ nf2_core/nf2_dma/nf2_dma_regs/control_reg_nxt(24).
+ nf2_core/user_data_path/output_queues/remove_pkt/lo_addr_next(13).
+ nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_fifo_64.gmac_rx_fifo/BU2/U0/gen_as.fgas/normgen.flblk/clkmod/cx.wrx/PNTR
+_B_xor0000.
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut2(44).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_bin_xor0000.
+ nf2_core/user_data_path/arm_datapath/regFile_DataOut1(60).
+
+
+The following Nets are new/changed.
+-----------------------------------
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(5)28_1.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(5)50_2.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(24).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(44).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(11)7.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/Mcount_tx_pkt_stored_delta_xor(0)117_2.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(0)13.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(1)13.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(2)13.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(3)13.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(4)13.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(5)13.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(6)13.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(7)13.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(8)13.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(9)13.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(5)28_1.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(5)50_2.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(20).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(20).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(19).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(19).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(24).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(29).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(29).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(12).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(12).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(13).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(13).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(10).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(10).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(11).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(11).
+ nf2_core/user_data_path/arm_datapath/module_regs/.generic_hw_regs/N02.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(4).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(4).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(3).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(3).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(5).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(5).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(44).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(15)7.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(12)7.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(13)7.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(50).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(50).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(42).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(42).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(2)7.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(3)7.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(10)7.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(7)7.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(1)7.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(54).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(54).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(55).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(55).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(53).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(53).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(56).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(56).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(51).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(51).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(52).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(52).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(48).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(48).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(5)7.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(9)7.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(49).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(49).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(5)28_1.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(5)50_2.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(61).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(61).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(62).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(62).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(6).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(6).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(60).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(60).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(2).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(2).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(5)28_1.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(5)50_2.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/Mcount_tx_pkt_stored_delta_xor(0)117_2.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/Mcount_tx_pkt_stored_delta_xor(0)117_2.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/Mcount_tx_pkt_stored_delta_xor(0)117_2.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(11)13.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(12)13.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(13)13.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(14)13.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(15)13.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(16)13.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(17)13.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(18)13.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(9).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(14).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(14).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(15).
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(10)13.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(41).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(43).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(45).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(46).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(46).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(47).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(6)7.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(7).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(7).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(8).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(9).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(33).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(34).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(34).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(35).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(36).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(36).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(37).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(38).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(38).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(39).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(10)_2.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(11)_2.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(10)_SW0_2.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(10)_SW0_2.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(10)_SW0_2.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(10)_SW0_2.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(11)_SW0_2.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(11)_SW0_2.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(11)_SW0_2.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(11)_SW0_2.
+ nf2_core/device_id_reg/reg_rd_data_mux0000(30)27_1.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(10)_2.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(11)_2.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(10)_2.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(10)_2.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(11)_2.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_210(11)_2.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(21).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(21).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(22).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(30).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(15).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(23).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(23).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(31).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(31).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(16).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(32).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(40).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(17).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(17).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(25).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(25).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(33).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(18).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(26).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(27).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(27).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(35).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(43).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(28).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(37).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(45).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(39).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(47).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(57).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(57).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(58).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(59).
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(59).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(26).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(28).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(58).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(18).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(22).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(8).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(16).
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(40).
+ nf2_core/user_data_path/arm_datapath/pipe_ID_EX/ReadData1_o_1_REPLICA_22.
+ nf2_core/user_data_path/arm_datapath/pipe_ID_EX/ReadData1_o_0_REPLICA_23.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(30).
+ nf2_core/user_data_path/arm_datapath/pipe_ID_EX/ReadData1_o_0_REPLICA_23_lut.
+ nf2_core/user_data_path/arm_datapath/ArithUnit/res_o(32).
+ nf2_core/user_data_path/arm_datapath/pipe_ID_EX/ReadData1_o_1_REPLICA_22_lut.
+ nf2_core/user_data_path/arm_datapath/ALU_MuxOut(41).

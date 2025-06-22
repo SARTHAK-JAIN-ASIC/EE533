@@ -1,0 +1,50 @@
+Client IP: 10.0.15.3 connecting to Server IP: 10.0.12.3 on Port 5001 ...
+Client IP: 10.0.14.3 connecting to Server IP: 10.0.13.3 on Port 5002 ...
+Client IP: 10.0.13.3 connecting to Server IP: 10.0.14.3 on Port 5003 ...
+Client IP: 10.0.12.3 connecting to Server IP: 10.0.15.3 on Port 5004 ...
+------------------------------------------------------------
+Client connecting to 10.0.12.3, UDP port 5001
+Sending 512 byte datagrams
+UDP buffer size: 2.00 MByte (default)
+------------------------------------------------------------
+[  3] local 10.0.15.3 port 43894 connected with 10.0.12.3 port 5001
+------------------------------------------------------------
+Client connecting to 10.0.13.3, UDP port 5002
+Sending 512 byte datagrams
+UDP buffer size: 2.00 MByte (default)
+------------------------------------------------------------
+[  3] local 10.0.14.3 port 36022 connected with 10.0.13.3 port 5002
+------------------------------------------------------------
+Client connecting to 10.0.14.3, UDP port 5003
+Sending 512 byte datagrams
+UDP buffer size: 2.00 MByte (default)
+------------------------------------------------------------
+------------------------------------------------------------
+Client connecting to 10.0.15.3, UDP port 5004
+Sending 512 byte datagrams
+UDP buffer size: 2.00 MByte (default)
+------------------------------------------------------------
+[  3] local 10.0.12.3 port 41238 connected with 10.0.15.3 port 5004
+[ ID] Interval       Transfer     Bandwidth
+[  3]  0.0-30.0 sec   886 MBytes   248 Mbits/sec
+[  3] Sent 1814804 datagrams
+[ ID] Interval       Transfer     Bandwidth
+[  3]  0.0-30.0 sec   889 MBytes   249 Mbits/sec
+[  3] Sent 1821258 datagrams
+[  3] Server Report:
+[  3]  0.0-30.3 sec  78.8 MBytes  21.8 Mbits/sec   2.446 ms 1659936/1821255 (91%)
+[  3]  0.0-30.3 sec  1 datagrams received out-of-order
+[  3] Server Report:
+[  3]  0.0-30.3 sec  79.1 MBytes  21.9 Mbits/sec   1.869 ms 1652785/1814802 (91%)
+[ ID] Interval       Transfer     Bandwidth
+[  3]  0.0-30.0 sec   885 MBytes   248 Mbits/sec
+[  3] Sent 1813408 datagrams
+[  3] Server Report:
+[  3]  0.0-30.3 sec  75.7 MBytes  21.0 Mbits/sec   6.283 ms 1658469/1813406 (91%)
+[  3] local 10.0.13.3 port 48668 connected with 10.0.14.3 port 5003
+[ ID] Interval       Transfer     Bandwidth
+[  3]  0.0-30.0 sec   886 MBytes   248 Mbits/sec
+[  3] Sent 1814219 datagrams
+[  3] Server Report:
+[  3]  0.0-30.2 sec  78.5 MBytes  21.8 Mbits/sec   4.584 ms 1653382/1814210 (91%)
+[  3]  0.0-30.2 sec  1 datagrams received out-of-order

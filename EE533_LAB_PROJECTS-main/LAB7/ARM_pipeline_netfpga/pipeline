@@ -1,0 +1,355 @@
+#!/usr/bin/perl -w
+use lib "/usr/local/netfpga/lib/Perl5";
+use strict;
+
+# Existing Registers
+my $IDS_PATTERN_HI_REG = 0x2001200;
+my $IDS_PATTERN_LO_REG = 0x2001204;
+my $IDS_COMMAND_REG = 0x2001208;
+my $IDS_MATCHES_REG = 0x200120c;
+
+# New ILA Registers
+my @ILA_REGS = (
+    { upper => 0x2001280, lower => 0x2001284 },
+    { upper => 0x2001288, lower => 0x200128c },
+    { upper => 0x2001290, lower => 0x2001294 },
+    { upper => 0x2001298, lower => 0x200129c },
+    { upper => 0x20012a0, lower => 0x20012a4 },
+    { upper => 0x20012a8, lower => 0x20012ac },
+    { upper => 0x20012b0, lower => 0x20012b4 },
+    { upper => 0x20012b8, lower => 0x20012bc },
+);
+
+# Memory Interface Registers
+#IMEM
+my $PIPELINE_DATAPATH_IMEM_INTERACT_REG = 0x2001000;
+my $PIPELINE_DATAPATH_IMEM_WRITE_REG = 0x2001004;
+my $PIPELINE_DATAPATH_IMEM_RW_ADDRESS_REG = 0x2001008;
+my $PIPELINE_DATAPATH_IMEM_WDATA_REG = 0x200100c;
+my $PIPELINE_DATAPATH_IMEM_RDATA_REG = 0x2001010;
+
+#DMEM
+my $ARM_DATAPATH_DMEM_RDATA_UPPER_0_REG      = 0x2001014;
+my $ARM_DATAPATH_DMEM_RDATA_LOWER_0_REG      = 0x2001018;
+my $ARM_DATAPATH_DMEM_RDATA_UPPER_1_REG      = 0x200101c;
+my $ARM_DATAPATH_DMEM_RDATA_LOWER_1_REG      = 0x2001020;
+my $ARM_DATAPATH_DMEM_RDATA_UPPER_2_REG      = 0x2001024;
+my $ARM_DATAPATH_DMEM_RDATA_LOWER_2_REG      = 0x2001028;
+my $ARM_DATAPATH_DMEM_RDATA_UPPER_3_REG      = 0x200102c;
+my $ARM_DATAPATH_DMEM_RDATA_LOWER_3_REG      = 0x2001030;
+my $ARM_DATAPATH_DMEM_RDATA_UPPER_4_REG      = 0x2001034;
+my $ARM_DATAPATH_DMEM_RDATA_LOWER_4_REG      = 0x2001038;
+my $ARM_DATAPATH_DMEM_RDATA_UPPER_5_REG      = 0x200103c;
+my $ARM_DATAPATH_DMEM_RDATA_LOWER_5_REG      = 0x2001040;
+my $ARM_DATAPATH_DMEM_RDATA_UPPER_6_REG      = 0x2001044;
+my $ARM_DATAPATH_DMEM_RDATA_LOWER_6_REG      = 0x2001048;
+
+
+#DMEM interact (old)
+my $PIPELINE_DATAPATH_DMEM_INTERACT_REG      = 0x2001210;
+my $PIPELINE_DATAPATH_DMEM_WRITE_REG         = 0x2001214;
+my $PIPELINE_DATAPATH_DMEM_RW_ADDRESS_REG    = 0x2001218;
+my $PIPELINE_DATAPATH_DMEM_WDATA_UPPER_REG   = 0x200121c;
+my $PIPELINE_DATAPATH_DMEM_WDATA_LOWER_REG   = 0x2001220;
+my $PIPELINE_DATAPATH_DMEM_RDATA_UPPER_REG   = 0x2001228;
+my $PIPELINE_DATAPATH_DMEM_RDATA_LOWER_REG   = 0x200122c;
+
+
+
+
+
+
+
+sub regwrite { # this will output anything to console
+    my( $addr, $value ) = @_;
+    my $cmd = sprintf( "regwrite $addr 0x%08x", $value );
+    my $result = `$cmd`;
+}
+
+sub silent_regwrite {# this won't output anything to console
+    my ($addr, $value) = @_;
+    my $cmd = sprintf("regwrite $addr 0x%08x", $value);
+    
+    # Execute command and suppress output
+    my @out = `$cmd 2>&1`;
+    @out = grep { !/found net device: nf2c0/ } @out;  # Remove unwanted messages
+}
+
+sub write_64bit {
+    my ($addr_high, $addr_low, $value) = @_;
+    
+    # Extract the high and low 32 bits from the 64-bit value
+    my $high = ($value >> 32) & 0xFFFFFFFF;  # High 32 bits
+    my $low = $value & 0xFFFFFFFF;           # Low 32 bits
+    
+    # Write the high and low values to their respective registers
+    silent_regwrite($addr_high, $high);  # Write high part
+    silent_regwrite($addr_low, $low);    # Write low part
+	
+	# Example usage:
+    # write_64bit($ADDR_HIGH, $ADDR_LOW, 0x123456789ABCDEF0);  # Writing a 64-bit value
+}
+
+
+
+
+sub regread { # this will output to console
+    my( $addr ) = @_;
+    my $cmd = sprintf( "regread $addr" );
+    my @out = `$cmd`;
+    my $result = $out[0];
+    if ( $result =~ m/Reg (0x[0-9a-f]+) \((\d+)\):\s+(0x[0-9a-f]+) \((\d+)\)/ ) {
+        $result = $3;
+    }
+    return $result;
+}
+
+
+sub read_imem {
+    my ($address) = @_;
+    
+    # Setup imem read operation
+    silent_regwrite($PIPELINE_DATAPATH_IMEM_INTERACT_REG, 0x1);  # Interact with imem
+    silent_regwrite($PIPELINE_DATAPATH_IMEM_WRITE_REG, 0x0);     # Set to read mode
+    silent_regwrite($PIPELINE_DATAPATH_IMEM_RW_ADDRESS_REG, $address);  # Set the address you want to read
+    
+    # Perform the read
+    my $rdata = regread($PIPELINE_DATAPATH_IMEM_RDATA_REG);
+    
+    # Print the instruction at the given address
+    printf("Instruction %d is: $rdata \n", $address);
+    
+    # Stop interacting with imem
+    silent_regwrite($PIPELINE_DATAPATH_IMEM_INTERACT_REG, 0x0); 
+}
+
+sub write_imem {
+    my ($address, $wdata) = @_;
+
+    # Setup imem write operation
+    silent_regwrite($PIPELINE_DATAPATH_IMEM_INTERACT_REG, 0x1);   # Interact with imem
+    silent_regwrite($PIPELINE_DATAPATH_IMEM_WRITE_REG, 0x1);      # Set to write mode
+    silent_regwrite($PIPELINE_DATAPATH_IMEM_RW_ADDRESS_REG, $address);  # Set the address you want to write to
+    
+    # Perform the write
+    silent_regwrite($PIPELINE_DATAPATH_IMEM_WDATA_REG, $wdata);
+    
+    # Put back to safe mode
+    silent_regwrite($PIPELINE_DATAPATH_IMEM_WRITE_REG, 0x0);      # Set to read mode (or other safe mode)
+    silent_regwrite($PIPELINE_DATAPATH_IMEM_INTERACT_REG, 0x0);   # Stop interacting with imem
+    
+    printf("Wrote 0x%x to address: %d\n", $wdata, $address);
+}
+
+sub read_all_dmem {
+    my @registers = (
+        [$ARM_DATAPATH_DMEM_RDATA_UPPER_0_REG, $ARM_DATAPATH_DMEM_RDATA_LOWER_0_REG],
+        [$ARM_DATAPATH_DMEM_RDATA_UPPER_1_REG, $ARM_DATAPATH_DMEM_RDATA_LOWER_1_REG],
+        [$ARM_DATAPATH_DMEM_RDATA_UPPER_2_REG, $ARM_DATAPATH_DMEM_RDATA_LOWER_2_REG],
+        [$ARM_DATAPATH_DMEM_RDATA_UPPER_3_REG, $ARM_DATAPATH_DMEM_RDATA_LOWER_3_REG],
+        [$ARM_DATAPATH_DMEM_RDATA_UPPER_4_REG, $ARM_DATAPATH_DMEM_RDATA_LOWER_4_REG],
+        [$ARM_DATAPATH_DMEM_RDATA_UPPER_5_REG, $ARM_DATAPATH_DMEM_RDATA_LOWER_5_REG],
+        [$ARM_DATAPATH_DMEM_RDATA_UPPER_6_REG, $ARM_DATAPATH_DMEM_RDATA_LOWER_6_REG]
+    );
+
+    foreach my $pair (@registers) {
+        my ($upper_addr, $lower_addr) = @$pair;
+        
+        my $upper = regread($upper_addr);
+        my $lower = regread($lower_addr);
+        
+        # Concatenate upper and lower 32-bit values into a 64-bit value
+        my $full_64bit = ($upper << 32) | $lower;
+        
+        printf "DMEM RDATA: 0x%016x\n", $full_64bit;
+    }
+}
+
+sub write_dmem {
+    my ($address, $wdata) = @_;
+
+    # Extract the upper and lower 32 bits of wdata
+    my $upper_32_bits = $wdata >> 32;
+    my $lower_32_bits = $wdata & 0xFFFFFFFF;
+
+    # Setup dmem write operation
+    silent_regwrite($PIPELINE_DATAPATH_DMEM_INTERACT_REG, 0x1);   # Interact with dmem
+    silent_regwrite($PIPELINE_DATAPATH_DMEM_WRITE_REG, 0x1);      # Set to write mode
+    silent_regwrite($PIPELINE_DATAPATH_DMEM_RW_ADDRESS_REG, $address);  # Set the address you want to write to
+    
+    # Write the upper and lower 32 bits to their respective registers
+    silent_regwrite($PIPELINE_DATAPATH_DMEM_WDATA_UPPER_REG, $upper_32_bits);
+    silent_regwrite($PIPELINE_DATAPATH_DMEM_WDATA_LOWER_REG, $lower_32_bits);
+    
+    # Put back to safe mode
+    silent_regwrite($PIPELINE_DATAPATH_DMEM_WRITE_REG, 0x0);      # Set to read mode (or other safe mode)
+    silent_regwrite($PIPELINE_DATAPATH_DMEM_INTERACT_REG, 0x0);   # Stop interacting with dmem
+    
+    printf("Wrote 0x%016x to address: %d\n", $wdata, $address);
+}
+
+sub read_alldmem {
+    my ($address) = @_;  
+    
+    # Perform the read
+    my $rdata_high = regread($PIPELINE_DATAPATH_DMEM_RDATA_UPPER_REG);
+    my $rdata_low = regread($PIPELINE_DATAPATH_DMEM_RDATA_LOWER_REG);  # Ensure correct register is used for lower part
+    
+    # Convert hex strings to integers (remove the "0x" and use hex())
+    my $rdata_high_int = hex($rdata_high);
+    my $rdata_low_int = hex($rdata_low);
+    
+    # Combine high and low values to create a 64-bit value
+    my $rdata_64bit = ($rdata_high_int << 32) | $rdata_low_int;
+
+    # Print the concatenated 64-bit value
+    printf("Data at address %d is: 0x%016x\n", $address, $rdata_64bit);
+    
+    # Stop interacting with dmem
+    silent_regwrite($PIPELINE_DATAPATH_DMEM_INTERACT_REG, 0x0); 
+}
+
+
+
+
+
+
+
+sub idsreset {
+    regwrite( $IDS_COMMAND_REG, 0x1 );
+    regwrite( $IDS_COMMAND_REG, 0x0 );
+}
+
+sub write_pattern {
+    my($hi, $lo) = @_;
+    regwrite($IDS_PATTERN_HI_REG, $hi);
+    regwrite($IDS_PATTERN_LO_REG, $lo);
+}
+
+sub pattern_from_ascii {
+    my( $patstr ) = @_;
+    my @chars = split(//, $patstr);
+    my @ints = map {  ord( $_ ) } @chars;
+    my $validBytes = $#ints + 1;
+    my $hi = 0;
+    my $lo = 0;
+    for (my $i = 0; $i <= 6; $i++) {
+        if ($i < $validBytes) {
+            my $bit = 1 << (6 - $i);
+            print "Setting mask bit $bit for byte $i\n";
+            $hi |= ($bit << 24);
+            if ($i <= 2) {
+                $hi |= ($ints[$i] << (8 * (2 - $i)));
+            } else {
+                my $pos = $i - 3;
+                $lo |= ($ints[$i] << (8 * (3 - $pos)));
+            }
+        }
+    }
+    return ($hi, $lo);
+}
+
+sub usage {
+    print "Usage: idsreg <cmd> <cmd options>\n";
+    print "  Commands:\n";
+    print "    reset                resets the matches counter\n";
+    print "    pattern <string>     set a pattern from ASCII\n";
+    print "    matches              displays the matches register\n";
+    print "    allregs              displays all IDS registers\n";
+    print "    ila_regs             displays all ILA registers\n";
+}
+
+my $numargs = $#ARGV + 1;
+if( $numargs < 1 ) {
+    usage();
+    exit(1);
+}
+
+my $cmd = $ARGV[0];
+
+if ($cmd eq "reset") {
+    idsreset();
+} elsif ($cmd eq "pattern") {
+    if ($numargs < 2) {
+        usage();
+        exit(1);
+    }
+    my $str = $ARGV[1];
+    my($hi, $lo) = pattern_from_ascii($str);
+    printf("Setting pattern hi=0x%08x, lo=0x%08x\n", $hi, $lo);
+    write_pattern($hi, $lo);   
+} elsif ($cmd eq "matches") {
+    my $matches = regread($IDS_MATCHES_REG);
+    print $matches,"\n\n";
+} elsif ($cmd eq "allregs") {
+    print "MATCHES:    ", regread( $IDS_MATCHES_REG ), "\n";
+    print "PATTERN_HI: ", regread( $IDS_PATTERN_HI_REG ), "\n";
+    print "PATTERN_LO: ", regread( $IDS_PATTERN_LO_REG ), "\n";
+    print "COMMAND:    ", regread( $IDS_COMMAND_REG ), "\n";
+} elsif ($cmd eq "ila_regs") {
+    print "Reading ILA Registers:\n";
+    for my $i (0..7) {
+        my $upper_val = hex(regread($ILA_REGS[$i]{upper}));
+        my $lower_val = hex(regread($ILA_REGS[$i]{lower}));
+        printf("ILA[%d] UPPER: 0x%08x, LOWER: 0x%08x\n", $i, $upper_val, $lower_val);
+    }
+    print "\n";
+} elsif ($cmd eq "read_imem") {
+    if ($numargs < 2) {
+        printf("Not enough arguments \n");
+        exit(1);
+    }
+    my $address = $ARGV[1];
+    
+    # Call the function to read from imem
+    read_imem($address);
+
+} elsif ($cmd eq "write_imem") {
+    if ($numargs < 3) {
+        printf("Not enough arguments \n");
+        exit(1);
+    }
+    
+    my $address = $ARGV[1];
+    my $wdata = $ARGV[2];
+    
+    # Call the write_imem function
+    write_imem($address, $wdata);
+	
+	
+} elsif ($cmd eq "read_dmem") {
+    if ($numargs < 2) {
+        printf("Not enough arguments \n");
+        exit(1);
+    }
+    
+    my $address = $ARGV[1];
+    
+    # Call the function to read from imem
+    read_dmem($address);
+
+} elsif ($cmd eq "write_dmem") {
+    if ($numargs < 3) {
+        printf("Not enough arguments \n");
+        exit(1);
+    }
+    
+    my $address = $ARGV[1];
+    my $wdata = $ARGV[2];
+    
+    # Call the write_imem function
+    write_dmem($address, $wdata);
+	
+	
+} 
+elsif ($cmd eq "read_all_dmem") {
+    
+    
+    read_all_dmem();
+	
+	
+} else {
+    print "Unrecognized command $cmd\n";
+    usage();
+    exit(1);
+}

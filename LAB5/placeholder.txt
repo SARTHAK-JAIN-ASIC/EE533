@@ -1,0 +1,6 @@
+This is the lab-5 folder for EE-533 for TEAM#3
+
+Team #3 Members:
+Sarthak Jain <sarthakj@usc.edu>
+Archit Sethi <architse@usc.edu>
+Justin Santos <jsantos@usc.edu>

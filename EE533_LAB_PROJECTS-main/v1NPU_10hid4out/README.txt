@@ -1,0 +1,1 @@
+Bfloat16, 10 hidden layer neurons, 10 ReLu, and 4 output layer neurons to make inferences for images of digits (0-3).

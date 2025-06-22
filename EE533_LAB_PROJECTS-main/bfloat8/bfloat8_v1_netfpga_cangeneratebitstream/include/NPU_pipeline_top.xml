@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nf:module xmlns:nf="http://www.NetFPGA.org/NF2_register_system" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.NetFPGA.org/NF2_register_system NF2_register_system.xsd ">
+	<nf:name>NPU_pipeline_top</nf:name>
+	<nf:prefix>NPU_pipeline_top</nf:prefix>
+	<nf:location>udp</nf:location>
+	<nf:description>Registers for NPU_pipeline_top</nf:description>
+	<nf:blocksize>512</nf:blocksize>
+	<nf:registers>
+		<nf:register>
+		  <nf:name>sw_reg_inference_mem_addr</nf:name>
+			<nf:description>address of inference_mem</nf:description>
+			<nf:type>generic_software32</nf:type>
+		</nf:register>
+		
+		<nf:register>
+		  <nf:name>hw_reg_inference_mem_data</nf:name>
+			<nf:description>inference data</nf:description>
+			<nf:type>generic_hardware32</nf:type>
+		</nf:register>
+		
+		
+	</nf:registers>
+</nf:module>
+

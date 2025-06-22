@@ -1,0 +1,36 @@
+C:/VirtualBoxShare/Lab7/Pipeline/Data_Mem.v {1 {vlog -work work -vopt -stats=none C:/VirtualBoxShare/Lab7/Pipeline/Data_Mem.v
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module Data_Mem
+
+Top level modules:
+	Data_Mem
+
+} {} {}} C:/VirtualBoxShare/Lab7/Pipeline/mux2to1.v {1 {vlog -work work -vopt -stats=none C:/VirtualBoxShare/Lab7/Pipeline/mux2to1.v
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module mux2to1
+
+Top level modules:
+	mux2to1
+
+} {} {}} C:/VirtualBoxShare/Lab7/Pipeline/pipe_EXMEM.v {1 {vlog -work work -vopt -stats=none C:/VirtualBoxShare/Lab7/Pipeline/pipe_EXMEM.v
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module pipe_EXMEM
+
+Top level modules:
+	pipe_EXMEM
+
+} {} {}} C:/VirtualBoxShare/Lab7/Pipeline/pipe_MEMWB.v {1 {vlog -work work -vopt -stats=none C:/VirtualBoxShare/Lab7/Pipeline/pipe_MEMWB.v
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module pipe_MEMWB
+
+Top level modules:
+	pipe_MEMWB
+
+} {} {}} C:/VirtualBoxShare/Lab7/Pipeline/stage_MEMtoWB.v {1 {vlog -work work -vopt -stats=none C:/VirtualBoxShare/Lab7/Pipeline/stage_MEMtoWB.v
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module stage_MEMtoWB
+
+Top level modules:
+	stage_MEMtoWB
+
+} {} {}}

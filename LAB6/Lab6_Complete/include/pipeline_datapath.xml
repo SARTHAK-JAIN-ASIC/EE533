@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nf:module xmlns:nf="http://www.NetFPGA.org/NF2_register_system" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.NetFPGA.org/NF2_register_system NF2_register_system.xsd ">
+	<nf:name>pipeline_datapath</nf:name>
+	<nf:prefix>pipeline_datapath</nf:prefix>
+	<nf:location>udp</nf:location>
+	<nf:description>Registers for pipeline_datapath</nf:description>
+	<nf:blocksize>512</nf:blocksize>
+	<nf:registers>
+		<nf:register>
+		  <nf:name>imem_interact</nf:name>
+			<nf:description>Intereracting with IMEM</nf:description>
+			<nf:type>generic_software32</nf:type>
+		</nf:register>
+		<nf:register>
+		  <nf:name>imem_write</nf:name>
+			<nf:description>If writing to IMEM</nf:description>
+			<nf:type>generic_software32</nf:type>
+		</nf:register>
+		<nf:register>
+		  <nf:name>imem_rw_address</nf:name>
+			<nf:description>Address of interest</nf:description>
+			<nf:type>generic_software32</nf:type>
+		</nf:register>
+		<nf:register>
+		  <nf:name>imem_wdata</nf:name>
+			<nf:description>Instruction to be written to IMEM</nf:description>
+			<nf:type>generic_software32</nf:type>
+		</nf:register>
+		<nf:register>
+		  <nf:name>dmem_interact</nf:name>
+			<nf:description>Intereracting with DMEM</nf:description>
+			<nf:type>generic_software32</nf:type>
+		</nf:register>
+		<nf:register>
+		  <nf:name>dmem_write</nf:name>
+			<nf:description>If writing to DMEM</nf:description>
+			<nf:type>generic_software32</nf:type>
+		</nf:register>
+		<nf:register>
+		  <nf:name>dmem_rw_address</nf:name>
+			<nf:description>Address of interest</nf:description>
+			<nf:type>generic_software32</nf:type>
+		</nf:register>
+		<nf:register>
+		  <nf:name>dmem_wdata_upper</nf:name>
+			<nf:description>Higher 32 bits of Data to be written to DMEM</nf:description>
+			<nf:type>generic_software32</nf:type>
+		</nf:register>
+		<nf:register>
+		  <nf:name>dmem_wdata_lower</nf:name>
+			<nf:description>Lower 32 bits of Data to be written to DMEM</nf:description>
+			<nf:type>generic_software32</nf:type>
+		</nf:register>
+		
+
+        <nf:register>
+		  <nf:name>imem_rdata</nf:name>
+			<nf:description>Data to be read</nf:description>
+			<nf:type>generic_hardware32</nf:type>
+		</nf:register>
+		<nf:register>
+		  <nf:name>dmem_rdata_upper</nf:name>
+			<nf:description>dmem_rdata_upper</nf:description>
+			<nf:type>generic_hardware32</nf:type>
+		</nf:register>
+		<nf:register>
+		  <nf:name>dmem_rdata_lower</nf:name>
+			<nf:description>dmem_rdata_lower</nf:description>
+			<nf:type>generic_hardware32</nf:type>
+		</nf:register>
+		
+		
+	</nf:registers>
+</nf:module>
+

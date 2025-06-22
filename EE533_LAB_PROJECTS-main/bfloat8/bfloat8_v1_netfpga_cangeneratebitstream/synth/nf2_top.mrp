@@ -1,0 +1,13 @@
+Release 10.1.03 Map K.39 (lin64)
+Xilinx Mapping Report File for Design 'nf2_top'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -timing -xe n -detail -ol high -cm speed
+-register_duplication -ignore_keep_hierarchy -pr b -k 4 -c 100 -tx off
+nf2_top.ngd 
+Target Device  : xc2vp50
+Target Package : ff1152
+Target Speed   : -7
+Mapper Version : virtex2p -- $Revision: 1.46.12.2 $
+Mapped Date    : Fri May  9 14:23:34 2025

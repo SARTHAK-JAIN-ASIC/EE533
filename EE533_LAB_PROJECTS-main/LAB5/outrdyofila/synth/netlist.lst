@@ -1,0 +1,12 @@
+/root/netfpga/projects/outrdyofila/synth/nf2_top.ngc 1739943194
+/root/netfpga/projects/outrdyofila/synth/bram64x256.ngc 1739942827
+/root/netfpga/projects/outrdyofila/synth/syncfifo_512x72.ngc 1739942827
+/root/netfpga/projects/outrdyofila/synth/dual_port_mem_72bit.ngc 1739942827
+/root/netfpga/projects/outrdyofila/synth/cdq_tx_fifo_256x72_to_36.ngc 1739942827
+/root/netfpga/projects/outrdyofila/synth/cdq_rx_fifo_512x36_to_72.ngc 1739942827
+/root/netfpga/projects/outrdyofila/synth/txfifo_512x72_to_9.ngc 1739942827
+/root/netfpga/projects/outrdyofila/synth/rxfifo_8kx9_to_72.ngc 1739942827
+/root/netfpga/projects/outrdyofila/synth/rxlengthfifo_128x13.ngc 1739942827
+/root/netfpga/projects/outrdyofila/synth/pci2net_16x60.ngc 1739942827
+/root/netfpga/projects/outrdyofila/synth/net2pci_16x32.ngc 1739942827
+OK

@@ -1,0 +1,184 @@
+{C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ALU_EX_Mux.v} {1 {vlog -work work -vopt -stats=none {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ALU_EX_Mux.v}
+Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+-- Compiling module ALU_EX_Mux
+
+Top level modules:
+	ALU_EX_Mux
+
+} {} {}} {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/carry_lookahead.v} {1 {vlog -work work -vopt -stats=none {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/carry_lookahead.v}
+Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+-- Compiling module carry_lookahead
+
+Top level modules:
+	carry_lookahead
+
+} {} {}} {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ControlUnit.v} {1 {vlog -work work -vopt -stats=none {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ControlUnit.v}
+Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+-- Compiling module ControlUnit
+
+Top level modules:
+	ControlUnit
+
+} {} {}} {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/HazardDetectionUnit.v} {1 {vlog -work work -vopt -stats=none {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/HazardDetectionUnit.v}
+Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+-- Compiling module HazardDetectionUnit
+
+Top level modules:
+	HazardDetectionUnit
+
+} {} {}} {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ID_EX.v} {1 {vlog -work work -vopt -stats=none {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ID_EX.v}
+Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+-- Compiling module ID_EX
+
+Top level modules:
+	ID_EX
+
+} {} {}} {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/signExtended.v} {1 {vlog -work work -vopt -stats=none {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/signExtended.v}
+Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+-- Compiling module signExtended
+
+Top level modules:
+	signExtended
+
+} {} {}} {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/PC_Adder.v} {1 {vlog -work work -vopt -stats=none {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/PC_Adder.v}
+Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+-- Compiling module PC_Adder
+
+Top level modules:
+	PC_Adder
+
+} {} {}} {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ALUControl.v} {1 {vlog -work work -vopt -stats=none {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ALUControl.v}
+Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+-- Compiling module ALUControl
+
+Top level modules:
+	ALUControl
+
+} {} {}} {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/IF_ID.v} {1 {vlog -work work -vopt -stats=none {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/IF_ID.v}
+Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+-- Compiling module pipe_IFID
+
+Top level modules:
+	pipe_IFID
+
+} {} {}} {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/PC.v} {1 {vlog -work work -vopt -stats=none {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/PC.v}
+Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}} {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/RegisterSelect_Mux.v} {1 {vlog -work work -vopt -stats=none {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/RegisterSelect_Mux.v}
+Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+-- Compiling module RegisterSelect_Mux
+
+Top level modules:
+	RegisterSelect_Mux
+
+} {} {}} {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/regfile.v} {1 {vlog -work work -vopt -stats=none {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/regfile.v}
+Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+-- Compiling module regfile
+
+Top level modules:
+	regfile
+
+} {} {}} {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/adder.v} {1 {vlog -work work -vopt -stats=none {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/adder.v}
+Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/branch_and.v} {1 {vlog -work work -vopt -stats=none {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/branch_and.v}
+Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+-- Compiling module branch_and
+
+Top level modules:
+	branch_and
+
+} {} {}} {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/Data_Mem.v} {1 {vlog -work work -vopt -stats=none {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/Data_Mem.v}
+Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+-- Compiling module Data_Mem
+
+Top level modules:
+	Data_Mem
+
+} {} {}} {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ForwardingUnitALUMuxA.v} {1 {vlog -work work -vopt -stats=none {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ForwardingUnitALUMuxA.v}
+Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+-- Compiling module ForwardingUnitALUMuxA
+
+Top level modules:
+	ForwardingUnitALUMuxA
+
+} {} {}} {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/pipe_EXMEM.v} {1 {vlog -work work -vopt -stats=none {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/pipe_EXMEM.v}
+Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+-- Compiling module pipe_EXMEM
+
+Top level modules:
+	pipe_EXMEM
+
+} {} {}} {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ForwardingUnitALUMuxB.v} {1 {vlog -work work -vopt -stats=none {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ForwardingUnitALUMuxB.v}
+Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+-- Compiling module ForwardingUnitALUMuxB
+
+Top level modules:
+	ForwardingUnitALUMuxB
+
+} {} {}} {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/shift_then_compare.v} {1 {vlog -work work -vopt -stats=none {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/shift_then_compare.v}
+Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+-- Compiling module shift_then_compare
+
+Top level modules:
+	shift_then_compare
+
+} {} {}} {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ForwardingUnit.v} {1 {vlog -work work -vopt -stats=none {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ForwardingUnit.v}
+Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+-- Compiling module ForwardingUnit
+
+Top level modules:
+	ForwardingUnit
+
+} {} {}} {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ARM_datapath_tb.v} {1 {vlog -work work -vopt -stats=none {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ARM_datapath_tb.v}
+Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+-- Compiling module arm_datapath
+-- Compiling module ARM_datapath_tb
+
+Top level modules:
+	ARM_datapath_tb
+
+} {} {}} {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/Mux2x1_9bit.v} {1 {vlog -work work -vopt -stats=none {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/Mux2x1_9bit.v}
+Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+-- Compiling module Mux2x1_Parameterized
+
+Top level modules:
+	Mux2x1_Parameterized
+
+} {} {}} {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/PC_Mux.v} {1 {vlog -work work -vopt -stats=none {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/PC_Mux.v}
+Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+-- Compiling module PC_Mux
+
+Top level modules:
+	PC_Mux
+
+} {} {}} {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/pipe_MEMWB.v} {1 {vlog -work work -vopt -stats=none {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/pipe_MEMWB.v}
+Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+-- Compiling module pipe_MEMWB
+
+Top level modules:
+	pipe_MEMWB
+
+} {} {}} {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/Mux2x1.v} {1 {vlog -work work -vopt -stats=none {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/Mux2x1.v}
+Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+-- Compiling module Mux2x1
+
+Top level modules:
+	Mux2x1
+
+} {} {}} {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/imem32x512.v} {1 {vlog -work work -vopt -stats=none {C:\Users\saint\OneDrive\Documents\USC RELATED STUFF\EE533\LAB7_V2_FW_HDU\sim_initial_src\imem32x512.v}
+Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+-- Compiling module imem32x512
+
+Top level modules:
+	imem32x512
+
+} {} {}}

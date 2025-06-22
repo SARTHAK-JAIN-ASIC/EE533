@@ -1,0 +1,84 @@
+Release 10.1.03 Physical Synthesis Report K.39 (lin64)
+Copyright (c) 1995-2007 Xilinx, Inc. All rights reserved.
+
+TABLE OF CONTENTS
+  1) Physical Synthesis Options Summary
+  2) Optimizations statistics and details
+
+
+=========================================================================
+*                 Physical Synthesis Options Summary                    *
+=========================================================================
+---- Options
+Global Optimization                 : OFF
+    Retiming                        : OFF
+    Equivalent Register Removal     : OFF
+Timing-Driven Packing and Placement : ON
+    Logic Optimization              : OFF
+    Register Duplication            : ON
+
+---- Target Parameters
+Target Device                       : 2vp50ff1152-7
+
+=========================================================================
+
+
+=========================================================================
+*                        Optimizations                                  *
+=========================================================================
+---- Statistics
+   Number of registers added by Replication                  | 43              
+
+   Overall change in number of registers                     | +43              
+
+
+---- Details
+
+New or modified components                             | Optimization             | Objective           
+-------------------------------------------------------|--------------------------|----------------------
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(0)_REPLICA_62| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(0)_REPLICA_63| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(0)_REPLICA_64| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(0)_REPLICA_65| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(0)_REPLICA_66| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(0)_REPLICA_67| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(0)_REPLICA_68| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(0)_REPLICA_69| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(0)_REPLICA_70| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(0)_REPLICA_71| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(0)_REPLICA_72| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(0)_REPLICA_73| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(0)_REPLICA_73_REPLICA_86| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(0)_REPLICA_74| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(0)_REPLICA_75| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(0)_REPLICA_76| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(0)_REPLICA_77| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(0)_REPLICA_78| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(0)_REPLICA_79| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(0)_REPLICA_80| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(0)_REPLICA_81| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(0)_REPLICA_82| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(0)_REPLICA_83| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(3)_REPLICA_42| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(3)_REPLICA_43| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(3)_REPLICA_44| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(3)_REPLICA_45| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(3)_REPLICA_46| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(3)_REPLICA_47| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(3)_REPLICA_48| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(3)_REPLICA_49| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(3)_REPLICA_50| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(3)_REPLICA_51| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(3)_REPLICA_52| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(3)_REPLICA_53| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(3)_REPLICA_54| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(3)_REPLICA_55| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(3)_REPLICA_56| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(3)_REPLICA_57| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(3)_REPLICA_58| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(3)_REPLICA_59| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(3)_REPLICA_60| Replication              | Fanout Optimization
+nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(3)_REPLICA_61| Replication              | Fanout Optimization
+
+
+

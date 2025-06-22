@@ -1,0 +1,92 @@
+C:/VirtualBoxShare/bfloat8NPU_valid/weight_rom.v {1 {vlog -work work -vopt -stats=none C:/VirtualBoxShare/bfloat8NPU_valid/weight_rom.v
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module weight_rom
+
+Top level modules:
+	weight_rom
+
+} {} {}} C:/VirtualBoxShare/bfloat8NPU_valid/ReLu.v {1 {vlog -work work -vopt -stats=none {C:\VirtualBoxShare\bfloat8NPU_valid\ReLu.v}
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module ReLu
+
+Top level modules:
+	ReLu
+
+} {} {}} C:/VirtualBoxShare/bfloat8NPU_valid/NPU_dotproduct.v {1 {vlog -work work -vopt -stats=none C:/VirtualBoxShare/bfloat8NPU_valid/NPU_dotproduct.v
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module NPU_dotproduct
+
+Top level modules:
+	NPU_dotproduct
+
+} {} {}} C:/VirtualBoxShare/bfloat8NPU_valid/bfloat8_comparison.v {1 {vlog -work work -vopt -stats=none C:/VirtualBoxShare/bfloat8NPU_valid/bfloat8_comparison.v
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module bfloat8_comparison
+
+Top level modules:
+	bfloat8_comparison
+
+} {} {}} C:/VirtualBoxShare/bfloat8NPU_valid/Output_Layer_Neuron.v {1 {vlog -work work -vopt -stats=none C:/VirtualBoxShare/bfloat8NPU_valid/Output_Layer_Neuron.v
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module Output_Layer_Neuron
+
+Top level modules:
+	Output_Layer_Neuron
+
+} {} {}} C:/VirtualBoxShare/bfloat8NPU_valid/inference_mem.v {1 {vlog -work work -vopt -stats=none C:/VirtualBoxShare/bfloat8NPU_valid/inference_mem.v
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module inference_mem
+
+Top level modules:
+	inference_mem
+
+} {} {}} C:/VirtualBoxShare/bfloat8NPU_valid/Max_Find_10_Bfloat8.v {1 {vlog -work work -vopt -stats=none {C:\VirtualBoxShare\bfloat8NPU_valid\Max_Find_10_Bfloat8.v}
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module Max_Find_10_Bfloat8
+
+Top level modules:
+	Max_Find_10_Bfloat8
+
+} {} {}} C:/VirtualBoxShare/bfloat8NPU_valid/mux_2to1_8bit.v {1 {vlog -work work -vopt -stats=none C:/VirtualBoxShare/bfloat8NPU_valid/mux_2to1_8bit.v
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module mux_2to1_8bit
+
+Top level modules:
+	mux_2to1_8bit
+
+} {} {}} C:/VirtualBoxShare/bfloat8NPU_valid/NPU_pipeline_top_tb.v {1 {vlog -work work -vopt -stats=none C:/VirtualBoxShare/bfloat8NPU_valid/NPU_pipeline_top_tb.v
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module tb_NPU_pipeline_top
+
+Top level modules:
+	tb_NPU_pipeline_top
+
+} {} {}} C:/VirtualBoxShare/bfloat8NPU_valid/bfloat8_add.v {1 {vlog -work work -vopt -stats=none C:/VirtualBoxShare/bfloat8NPU_valid/bfloat8_add.v
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module bfloat8_add
+
+Top level modules:
+	bfloat8_add
+
+} {} {}} C:/VirtualBoxShare/bfloat8NPU_valid/bfloat8_mult.v {1 {vlog -work work -vopt -stats=none C:/VirtualBoxShare/bfloat8NPU_valid/bfloat8_mult.v
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module bfloat8_mult
+
+Top level modules:
+	bfloat8_mult
+
+} {} {}} C:/VirtualBoxShare/bfloat8NPU_valid/NPU_pipeline_top.v {1 {vlog -work work -vopt -stats=none C:/VirtualBoxShare/bfloat8NPU_valid/NPU_pipeline_top.v
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module NPU_pipeline_top
+
+Top level modules:
+	NPU_pipeline_top
+
+} {} {}} C:/VirtualBoxShare/bfloat8NPU_valid/NPU_top_tb.v {1 {vlog -work work -vopt -stats=none C:/VirtualBoxShare/bfloat8NPU_valid/NPU_top_tb.v
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module tb_NPU_top
+
+Top level modules:
+	tb_NPU_top
+
+} {} {}}

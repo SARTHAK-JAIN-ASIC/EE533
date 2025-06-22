@@ -1,0 +1,200 @@
+#!/usr/bin/perl -w
+use lib "/usr/local/netfpga/lib/Perl5";
+use strict;
+
+# Existing Registers
+my $IDS_PATTERN_HI_REG = 0x2001200;
+my $IDS_PATTERN_LO_REG = 0x2001204;
+my $IDS_COMMAND_REG = 0x2001208;
+my $IDS_MATCHES_REG = 0x200120c;
+
+# New ILA Registers
+my @ILA_REGS = (
+    { upper => 0x2001280, lower => 0x2001284 },
+    { upper => 0x2001288, lower => 0x200128c },
+    { upper => 0x2001290, lower => 0x2001294 },
+    { upper => 0x2001298, lower => 0x200129c },
+    { upper => 0x20012a0, lower => 0x20012a4 },
+    { upper => 0x20012a8, lower => 0x20012ac },
+    { upper => 0x20012b0, lower => 0x20012b4 },
+    { upper => 0x20012b8, lower => 0x20012bc },
+);
+
+# Memory Interface Registers
+my $PIPELINE_DATAPATH_IMEM_INTERACT_REG = 0x2001200;
+my $PIPELINE_DATAPATH_IMEM_WRITE_REG = 0x2001204;
+my $PIPELINE_DATAPATH_IMEM_RW_ADDRESS_REG = 0x2001208;
+my $PIPELINE_DATAPATH_IMEM_WDATA_REG = 0x200120c;
+my $PIPELINE_DATAPATH_IMEM_RDATA_REG = 0x2001210;
+
+
+sub regwrite { # this will output anything to console
+    my( $addr, $value ) = @_;
+    my $cmd = sprintf( "regwrite $addr 0x%08x", $value );
+    my $result = `$cmd`;
+}
+
+sub silent_regwrite {# this won't output anything to console
+    my ($addr, $value) = @_;
+    my $cmd = sprintf("regwrite $addr 0x%08x", $value);
+    
+    # Execute command and suppress output
+    my @out = `$cmd 2>&1`;
+    @out = grep { !/found net device: nf2c0/ } @out;  # Remove unwanted messages
+}
+
+
+sub regread { # this will output to console
+    my( $addr ) = @_;
+    my $cmd = sprintf( "regread $addr" );
+    my @out = `$cmd`;
+    my $result = $out[0];
+    if ( $result =~ m/Reg (0x[0-9a-f]+) \((\d+)\):\s+(0x[0-9a-f]+) \((\d+)\)/ ) {
+        $result = $3;
+    }
+    return $result;
+}
+
+
+sub read_imem {
+    my ($address) = @_;
+    
+    # Setup imem read operation
+    silent_regwrite($PIPELINE_DATAPATH_IMEM_INTERACT_REG, 0x1);  # Interact with imem
+    silent_regwrite($PIPELINE_DATAPATH_IMEM_WRITE_REG, 0x0);     # Set to read mode
+    silent_regwrite($PIPELINE_DATAPATH_IMEM_RW_ADDRESS_REG, $address);  # Set the address you want to read
+    
+    # Perform the read
+    my $rdata = regread($PIPELINE_DATAPATH_IMEM_RDATA_REG);
+    
+    # Print the instruction at the given address
+    printf("Instruction %x is: $rdata \n", $address);
+    
+    # Stop interacting with imem
+    silent_regwrite($PIPELINE_DATAPATH_IMEM_INTERACT_REG, 0x0); 
+}
+
+
+
+
+
+sub idsreset {
+    regwrite( $IDS_COMMAND_REG, 0x1 );
+    regwrite( $IDS_COMMAND_REG, 0x0 );
+}
+
+sub write_pattern {
+    my($hi, $lo) = @_;
+    regwrite($IDS_PATTERN_HI_REG, $hi);
+    regwrite($IDS_PATTERN_LO_REG, $lo);
+}
+
+sub pattern_from_ascii {
+    my( $patstr ) = @_;
+    my @chars = split(//, $patstr);
+    my @ints = map {  ord( $_ ) } @chars;
+    my $validBytes = $#ints + 1;
+    my $hi = 0;
+    my $lo = 0;
+    for (my $i = 0; $i <= 6; $i++) {
+        if ($i < $validBytes) {
+            my $bit = 1 << (6 - $i);
+            print "Setting mask bit $bit for byte $i\n";
+            $hi |= ($bit << 24);
+            if ($i <= 2) {
+                $hi |= ($ints[$i] << (8 * (2 - $i)));
+            } else {
+                my $pos = $i - 3;
+                $lo |= ($ints[$i] << (8 * (3 - $pos)));
+            }
+        }
+    }
+    return ($hi, $lo);
+}
+
+sub usage {
+    print "Usage: idsreg <cmd> <cmd options>\n";
+    print "  Commands:\n";
+    print "    reset                resets the matches counter\n";
+    print "    pattern <string>     set a pattern from ASCII\n";
+    print "    matches              displays the matches register\n";
+    print "    allregs              displays all IDS registers\n";
+    print "    ila_regs             displays all ILA registers\n";
+}
+
+my $numargs = $#ARGV + 1;
+if( $numargs < 1 ) {
+    usage();
+    exit(1);
+}
+
+my $cmd = $ARGV[0];
+
+if ($cmd eq "reset") {
+    idsreset();
+} elsif ($cmd eq "pattern") {
+    if ($numargs < 2) {
+        usage();
+        exit(1);
+    }
+    my $str = $ARGV[1];
+    my($hi, $lo) = pattern_from_ascii($str);
+    printf("Setting pattern hi=0x%08x, lo=0x%08x\n", $hi, $lo);
+    write_pattern($hi, $lo);   
+} elsif ($cmd eq "matches") {
+    my $matches = regread($IDS_MATCHES_REG);
+    print $matches,"\n\n";
+} elsif ($cmd eq "allregs") {
+    print "MATCHES:    ", regread( $IDS_MATCHES_REG ), "\n";
+    print "PATTERN_HI: ", regread( $IDS_PATTERN_HI_REG ), "\n";
+    print "PATTERN_LO: ", regread( $IDS_PATTERN_LO_REG ), "\n";
+    print "COMMAND:    ", regread( $IDS_COMMAND_REG ), "\n";
+} elsif ($cmd eq "ila_regs") {
+    print "Reading ILA Registers:\n";
+    for my $i (0..7) {
+        my $upper_val = hex(regread($ILA_REGS[$i]{upper}));
+        my $lower_val = hex(regread($ILA_REGS[$i]{lower}));
+        printf("ILA[%d] UPPER: 0x%08x, LOWER: 0x%08x\n", $i, $upper_val, $lower_val);
+    }
+    print "\n";
+} elsif ($cmd eq "read_imem") {
+    if ($numargs < 2) {
+        printf("Not enough arguments \n");
+        exit(1);
+    }
+    my $address = $ARGV[1];
+    
+    # Call the function to read from imem
+    read_imem($address);
+
+} elsif ($cmd eq "write_imem") {
+    if ($numargs < 3) {
+        printf("Not enough arguments \n");
+        exit(1);
+    }
+    my $address = $ARGV[1];
+	my $wdata = $ARGV[2];
+	
+	# Setup imem write operation
+    silent_regwrite($PIPELINE_DATAPATH_IMEM_INTERACT_REG, 0x1);  # Interact with imem
+    silent_regwrite($PIPELINE_DATAPATH_IMEM_WRITE_REG, 0x1);     # Set to write mode
+    silent_regwrite($PIPELINE_DATAPATH_IMEM_RW_ADDRESS_REG, $address);  # Set the address you want to read
+    
+    # Perform the read
+    silent_regwrite($PIPELINE_DATAPATH_IMEM_WDATA_REG, $wdata);
+	
+	# Put back to safe mode
+    
+    silent_regwrite($PIPELINE_DATAPATH_IMEM_WRITE_REG, 0x0);     # Set to write mode
+	silent_regwrite($PIPELINE_DATAPATH_IMEM_INTERACT_REG, 0x0);  # Interact with imem
+    
+	printf("Wrote %x to address: %x \n", $wdata, $address); 
+	
+    
+    
+
+} else {
+    print "Unrecognized command $cmd\n";
+    usage();
+    exit(1);
+}

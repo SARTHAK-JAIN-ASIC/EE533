@@ -1,0 +1,169 @@
+$date
+	Fri Feb 21 16:35:39 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_Data_Mem $end
+$var wire 64 ! Dout [63:0] $end
+$var parameter 32 " ADDR_WIDTH $end
+$var parameter 32 # DATA_WIDTH $end
+$var parameter 32 $ MEM_DEPTH $end
+$var reg 8 % Address [7:0] $end
+$var reg 64 & WData [63:0] $end
+$var reg 1 ' Write_Enable $end
+$var reg 1 ( clk $end
+$scope module dut $end
+$var wire 8 ) Address [7:0] $end
+$var wire 64 * WData [63:0] $end
+$var wire 1 ' Write_Enable $end
+$var wire 1 ( clk $end
+$var parameter 32 + ADDR_WIDTH $end
+$var parameter 32 , DATA_WIDTH $end
+$var parameter 88 - INIT_FILE $end
+$var parameter 32 . MEM_DEPTH $end
+$var reg 64 / Dout [63:0] $end
+$upscope $end
+$scope task Reading_data_task $end
+$var reg 8 0 addr [7:0] $end
+$upscope $end
+$scope task Writing_data_Task $end
+$var reg 8 1 addr [7:0] $end
+$var reg 64 2 data [63:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100000000 .
+b100010001100001011101000110000101011111010011010100110100101110011010000110010101111000 -
+b1000000 ,
+b1000 +
+b100000000 $
+b1000000 #
+b1000 "
+$end
+#0
+$dumpvars
+b101010 2
+b1 1
+bx 0
+bx /
+b0 *
+b0 )
+0(
+0'
+b0 &
+b0 %
+bx !
+$end
+#5000
+1(
+#10000
+b101010 &
+b101010 *
+b1 %
+b1 )
+1'
+0(
+#15000
+1(
+#20000
+b1100100 2
+b11 1
+0'
+0(
+#25000
+1(
+#30000
+b1100100 &
+b1100100 *
+b11 %
+b11 )
+1'
+0(
+#35000
+b1100100 !
+b1100100 /
+1(
+#40000
+b11111111 2
+b101 1
+0'
+0(
+#45000
+1(
+#50000
+b11111111 &
+b11111111 *
+b101 %
+b101 )
+1'
+0(
+#55000
+b11111111 !
+b11111111 /
+1(
+#60000
+b1 0
+0'
+0(
+#65000
+bx !
+bx /
+b1 %
+b1 )
+1(
+#70000
+0(
+#75000
+b11 0
+1(
+#80000
+0(
+#85000
+b1100100 !
+b1100100 /
+b11 %
+b11 )
+1(
+#90000
+0(
+#95000
+b101 0
+1(
+#100000
+0(
+#105000
+b11111111 !
+b11111111 /
+b101 %
+b101 )
+1(
+#110000
+0(
+#115000
+1(
+#120000
+0(
+#125000
+1(
+#130000
+0(
+#135000
+1(
+#140000
+0(
+#145000
+1(
+#150000
+0(
+#155000
+1(
+#160000
+0(
+#165000
+1(

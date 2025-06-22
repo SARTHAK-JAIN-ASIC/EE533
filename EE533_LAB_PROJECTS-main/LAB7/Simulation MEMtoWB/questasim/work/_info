@@ -1,0 +1,158 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/questasim64_10.4c/examples
+T_opt
+!s110 1740772680
+VXBhha38DU79RWOdMXlneN3
+04 16 4 work stage_MEMtoWB_tb fast 0
+=1-244bfe875437-67c21547-260-5848
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.4c;61
+R0
+vData_Mem
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 cXFa;eaD[zKSVbjS4QMA:2
+IaSoVKldM<eX>iT@8@A@ci3
+Z2 dC:/VirtualBoxShare/Lab7/Pipeline/questasim
+w1740550369
+8C:/VirtualBoxShare/Lab7/Pipeline/Data_Mem.v
+FC:/VirtualBoxShare/Lab7/Pipeline/Data_Mem.v
+L0 3
+Z3 OL;L;10.4c;61
+Z4 !s108 1740789478.000000
+!s107 C:/VirtualBoxShare/Lab7/Pipeline/Data_Mem.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/VirtualBoxShare/Lab7/Pipeline/Data_Mem.v|
+!i113 0
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@data_@mem
+vmux2to1
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 cZLL9[ACiAeY2e;[JSSoK2
+I=E:=ggi;V0ETZOU^A[RUU3
+R2
+w1740729302
+Z6 8C:/VirtualBoxShare/Lab7/Pipeline/mux2to1.v
+Z7 FC:/VirtualBoxShare/Lab7/Pipeline/mux2to1.v
+Z8 L0 24
+R3
+R4
+Z9 !s107 C:/VirtualBoxShare/Lab7/Pipeline/mux2to1.v|
+Z10 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/VirtualBoxShare/Lab7/Pipeline/mux2to1.v|
+!i113 0
+R5
+vmux_2to1
+!s110 1740729062
+!i10b 1
+!s100 0>DB_SQ87SG6]Re_Yf=z`2
+IKA^]a3>WlGANbbUVBKh1Q2
+R1
+R2
+w1740727736
+R6
+R7
+R8
+R3
+r1
+!s85 0
+31
+!s108 1740729062.000000
+R9
+R10
+!i113 0
+R5
+vpipe_EXMEM
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 c2^IoBIUQ38JEGeM_ReZH1
+IGNbWB6kS23[On537MdeG30
+R2
+w1740773999
+8C:/VirtualBoxShare/Lab7/Pipeline/pipe_EXMEM.v
+FC:/VirtualBoxShare/Lab7/Pipeline/pipe_EXMEM.v
+Z11 L0 37
+R3
+R4
+!s107 C:/VirtualBoxShare/Lab7/Pipeline/pipe_EXMEM.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/VirtualBoxShare/Lab7/Pipeline/pipe_EXMEM.v|
+!i113 0
+R5
+npipe_@e@x@m@e@m
+vpipe_MEMWB
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 c=G:?Whh8iLQ>5_8`hWnU2
+I<PUT8FOSI^zNG:N0cP^SR2
+R2
+w1740725886
+8C:/VirtualBoxShare/Lab7/Pipeline/pipe_MEMWB.v
+FC:/VirtualBoxShare/Lab7/Pipeline/pipe_MEMWB.v
+R11
+R3
+R4
+!s107 C:/VirtualBoxShare/Lab7/Pipeline/pipe_MEMWB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/VirtualBoxShare/Lab7/Pipeline/pipe_MEMWB.v|
+!i113 0
+R5
+npipe_@m@e@m@w@b
+vstage_MEMtoWB
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 [M@@<Y51aNlnM1lPhTSaS3
+I4@9nk?XjCkhO:LK8BVE^e0
+R2
+w1740774059
+8C:/VirtualBoxShare/Lab7/Pipeline/stage_MEMtoWB.v
+FC:/VirtualBoxShare/Lab7/Pipeline/stage_MEMtoWB.v
+L0 35
+R3
+R4
+!s107 C:/VirtualBoxShare/Lab7/Pipeline/stage_MEMtoWB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/VirtualBoxShare/Lab7/Pipeline/stage_MEMtoWB.v|
+!i113 0
+R5
+nstage_@m@e@mto@w@b
+vstage_MEMtoWB_tb
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 HVf29llH3naiAT@j<I>3A2
+I8AngzU5KZ>g]NKbNGfV;j3
+R2
+w1740789472
+8C:/VirtualBoxShare/Lab7/Pipeline/stage_MEMtoWB_tb.v
+FC:/VirtualBoxShare/Lab7/Pipeline/stage_MEMtoWB_tb.v
+L0 21
+R3
+R4
+!s107 C:/VirtualBoxShare/Lab7/Pipeline/stage_MEMtoWB_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/VirtualBoxShare/Lab7/Pipeline/stage_MEMtoWB_tb.v|
+!i113 0
+R5
+nstage_@m@e@mto@w@b_tb

@@ -1,0 +1,12 @@
+/root/netfpga/projects/v4Lab7_SimpleARM/synth/nf2_top.ngc 1741481205
+/root/netfpga/projects/v4Lab7_SimpleARM/synth/imem32x512.ngc 1741481136
+/root/netfpga/projects/v4Lab7_SimpleARM/synth/Data_Mem.ngc 1741474170
+/root/netfpga/projects/v4Lab7_SimpleARM/synth/syncfifo_512x72.ngc 1392409073
+/root/netfpga/projects/v4Lab7_SimpleARM/synth/cdq_tx_fifo_256x72_to_36.ngc 1392408366
+/root/netfpga/projects/v4Lab7_SimpleARM/synth/cdq_rx_fifo_512x36_to_72.ngc 1392408281
+/root/netfpga/projects/v4Lab7_SimpleARM/synth/txfifo_512x72_to_9.ngc 1392408420
+/root/netfpga/projects/v4Lab7_SimpleARM/synth/rxfifo_8kx9_to_72.ngc 1392408470
+/root/netfpga/projects/v4Lab7_SimpleARM/synth/rxlengthfifo_128x13.ngc 1392408389
+/root/netfpga/projects/v4Lab7_SimpleARM/synth/pci2net_16x60.ngc 1392408858
+/root/netfpga/projects/v4Lab7_SimpleARM/synth/net2pci_16x32.ngc 1392408827
+OK

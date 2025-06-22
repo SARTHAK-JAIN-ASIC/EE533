@@ -1,0 +1,1 @@
+This folder will have all the files necessary to run netfpga synthesis and create a bitfile

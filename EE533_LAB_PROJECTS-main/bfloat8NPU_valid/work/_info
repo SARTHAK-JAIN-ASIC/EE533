@@ -1,0 +1,285 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/VirtualBoxShare/bfloat8NPU
+vbfloat8_add
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 9AU[Q^Odzc>o4_m3W2S;83
+IW22`n6cee?6WZm2R66dT>3
+Z1 dC:/VirtualBoxShare/bfloat8NPU_valid
+w1746829917
+8C:/VirtualBoxShare/bfloat8NPU_valid/bfloat8_add.v
+FC:/VirtualBoxShare/bfloat8NPU_valid/bfloat8_add.v
+L0 1
+Z2 OL;L;10.4c;61
+Z3 !s108 1747104227.000000
+!s107 C:/VirtualBoxShare/bfloat8NPU_valid/bfloat8_add.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/VirtualBoxShare/bfloat8NPU_valid/bfloat8_add.v|
+!i113 0
+Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vbfloat8_comparison
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 ]KF=f?o;9J_cin?Z^[XVi2
+IQZHTMLCGAT2kTR1P?;7AX0
+R1
+w1746171016
+8C:/VirtualBoxShare/bfloat8NPU_valid/bfloat8_comparison.v
+FC:/VirtualBoxShare/bfloat8NPU_valid/bfloat8_comparison.v
+L0 1
+R2
+R3
+!s107 C:/VirtualBoxShare/bfloat8NPU_valid/bfloat8_comparison.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/VirtualBoxShare/bfloat8NPU_valid/bfloat8_comparison.v|
+!i113 0
+R4
+vbfloat8_mult
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 QbzFed5>R4NAl;Tdj;MZD3
+IUl97zRmR_RE9<`TY6@KIP0
+R1
+w1746584783
+8C:/VirtualBoxShare/bfloat8NPU_valid/bfloat8_mult.v
+FC:/VirtualBoxShare/bfloat8NPU_valid/bfloat8_mult.v
+L0 1
+R2
+R3
+!s107 C:/VirtualBoxShare/bfloat8NPU_valid/bfloat8_mult.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/VirtualBoxShare/bfloat8NPU_valid/bfloat8_mult.v|
+!i113 0
+R4
+vinference_mem
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 @OnE_]Afed`1`<hKacVzF2
+ImQM^IVnejF@1DHoe5J8Pj2
+R1
+w1747100361
+8C:/VirtualBoxShare/bfloat8NPU_valid/inference_mem.v
+FC:/VirtualBoxShare/bfloat8NPU_valid/inference_mem.v
+L0 1
+R2
+R3
+!s107 C:/VirtualBoxShare/bfloat8NPU_valid/inference_mem.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/VirtualBoxShare/bfloat8NPU_valid/inference_mem.v|
+!i113 0
+R4
+vMax_Find_10_Bfloat8
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 eWE6g_RmV?F;Ae[K87QID2
+I2oMD`?leXAC[KhoQCFdZG1
+R1
+w1747100297
+8C:\VirtualBoxShare\bfloat8NPU_valid\Max_Find_10_Bfloat8.v
+FC:\VirtualBoxShare\bfloat8NPU_valid\Max_Find_10_Bfloat8.v
+L0 1
+R2
+Z5 !s108 1747104228.000000
+!s107 C:\VirtualBoxShare\bfloat8NPU_valid\Max_Find_10_Bfloat8.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:\VirtualBoxShare\bfloat8NPU_valid\Max_Find_10_Bfloat8.v|
+!i113 0
+R4
+n@max_@find_10_@bfloat8
+vmux_2to1_8bit
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 ia3=haP>Tj6ZLbYT12OhW1
+Ii6k@bLGEo0fJa<=H<7loc2
+R1
+w1746171042
+8C:/VirtualBoxShare/bfloat8NPU_valid/mux_2to1_8bit.v
+FC:/VirtualBoxShare/bfloat8NPU_valid/mux_2to1_8bit.v
+L0 1
+R2
+R5
+!s107 C:/VirtualBoxShare/bfloat8NPU_valid/mux_2to1_8bit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/VirtualBoxShare/bfloat8NPU_valid/mux_2to1_8bit.v|
+!i113 0
+R4
+vNPU_dotproduct
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 VlJAOUmjjOfPz8L:9W1MB3
+IgDh`TPBSac5YVYIcmKod70
+R1
+w1747099036
+8C:/VirtualBoxShare/bfloat8NPU_valid/NPU_dotproduct.v
+FC:/VirtualBoxShare/bfloat8NPU_valid/NPU_dotproduct.v
+L0 1
+R2
+R5
+!s107 C:/VirtualBoxShare/bfloat8NPU_valid/NPU_dotproduct.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/VirtualBoxShare/bfloat8NPU_valid/NPU_dotproduct.v|
+!i113 0
+R4
+n@n@p@u_dotproduct
+vNPU_pipeline_top
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 GSc@LlCmQ7IimhD?9@8IE2
+I925P:jjFKBMCb10l3_BhM2
+R1
+w1747100254
+8C:/VirtualBoxShare/bfloat8NPU_valid/NPU_pipeline_top.v
+FC:/VirtualBoxShare/bfloat8NPU_valid/NPU_pipeline_top.v
+L0 1
+R2
+R5
+!s107 C:/VirtualBoxShare/bfloat8NPU_valid/NPU_pipeline_top.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/VirtualBoxShare/bfloat8NPU_valid/NPU_pipeline_top.v|
+!i113 0
+R4
+n@n@p@u_pipeline_top
+vNPU_top
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 jZ^ImFdNidd455I6^oZT40
+IeMcoe=?enO?@VOhc5DTA@0
+R1
+w1747104213
+8C:\VirtualBoxShare\bfloat8NPU_valid\NPU_top.v
+FC:\VirtualBoxShare\bfloat8NPU_valid\NPU_top.v
+L0 1
+R2
+R5
+!s107 C:\VirtualBoxShare\bfloat8NPU_valid\NPU_top.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:\VirtualBoxShare\bfloat8NPU_valid\NPU_top.v|
+!i113 0
+R4
+n@n@p@u_top
+vOutput_Layer_Neuron
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 <65`@<jYPP7;zHGVF_f2h1
+IaK5TW`Bz?8MYLJ[:loiOH1
+R1
+w1747099696
+8C:/VirtualBoxShare/bfloat8NPU_valid/Output_Layer_Neuron.v
+FC:/VirtualBoxShare/bfloat8NPU_valid/Output_Layer_Neuron.v
+L0 1
+R2
+R5
+!s107 C:/VirtualBoxShare/bfloat8NPU_valid/Output_Layer_Neuron.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/VirtualBoxShare/bfloat8NPU_valid/Output_Layer_Neuron.v|
+!i113 0
+R4
+n@output_@layer_@neuron
+vReLu
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 5B@m_d<7EDmH6AFdHJ8BB2
+IQnZXz^4Ck_M^`okc=^ULK0
+R1
+w1747096440
+8C:\VirtualBoxShare\bfloat8NPU_valid\ReLu.v
+FC:\VirtualBoxShare\bfloat8NPU_valid\ReLu.v
+L0 1
+R2
+R5
+!s107 C:\VirtualBoxShare\bfloat8NPU_valid\ReLu.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:\VirtualBoxShare\bfloat8NPU_valid\ReLu.v|
+!i113 0
+R4
+n@re@lu
+vtb_NPU_pipeline_top
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 @NDP?=7NLE[HlchcU;4nC2
+IgWCI4hPfi_8Mkf2_VUEa[2
+R1
+w1747098937
+8C:/VirtualBoxShare/bfloat8NPU_valid/NPU_pipeline_top_tb.v
+FC:/VirtualBoxShare/bfloat8NPU_valid/NPU_pipeline_top_tb.v
+L0 1
+R2
+R5
+!s107 C:/VirtualBoxShare/bfloat8NPU_valid/NPU_pipeline_top_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/VirtualBoxShare/bfloat8NPU_valid/NPU_pipeline_top_tb.v|
+!i113 0
+R4
+ntb_@n@p@u_pipeline_top
+vtb_NPU_top
+!s110 1747104228
+!i10b 1
+!s100 BUZLEVFlWW1oK]K@ajdzN2
+I_[1VDb9MZVXiVS_LEz8FB1
+R0
+R1
+w1744486084
+8C:/VirtualBoxShare/bfloat8NPU_valid/NPU_top_tb.v
+FC:/VirtualBoxShare/bfloat8NPU_valid/NPU_top_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+R5
+!s107 C:/VirtualBoxShare/bfloat8NPU_valid/NPU_top_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/VirtualBoxShare/bfloat8NPU_valid/NPU_top_tb.v|
+!i113 0
+R4
+ntb_@n@p@u_top
+vweight_rom
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 <<Z]X347HB_WMJC2X5A8f1
+I7]M0PlNzN6h^MKNBn[b;B1
+R1
+w1746173268
+8C:/VirtualBoxShare/bfloat8NPU_valid/weight_rom.v
+FC:/VirtualBoxShare/bfloat8NPU_valid/weight_rom.v
+L0 1
+R2
+R5
+!s107 C:/VirtualBoxShare/bfloat8NPU_valid/weight_rom.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/VirtualBoxShare/bfloat8NPU_valid/weight_rom.v|
+!i113 0
+R4

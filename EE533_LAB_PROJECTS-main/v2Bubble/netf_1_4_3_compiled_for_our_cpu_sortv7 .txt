@@ -1,0 +1,85 @@
+    @ Initialize the array
+	e3a01003    mov	r1, #3
+	e3a02004    mov r2, #4
+	e3a03001    mov r3, #1
+	e3a0a003    mov r10, #3    @ r10 will be the starting address of the array in dmem
+	00000000   
+	00000000   
+	00000000
+	e50a1000
+	e50a1000
+	e50a1000  str r1, [r10,#0]	  3 @ dmem[3] 
+	00000000   
+	00000000   
+	00000000
+	e50a2001  str r2, [r10,#-1]   4 @ dmem[2]
+	00000000   
+	00000000   
+	00000000
+	e50a3002  str r3, [r10,#-2]   1 @ dmem[1]
+    e1a0b00a  mov     r11, r10               @ Load the starting address of the array into r11
+	00000000   
+	00000000   
+	00000000
+	e1a0c00b  mov     r12, r11               @ r12 will be used to change the jth element address during the inner loop loading. r11 will be the ith element address.
+    e3a01003  mov     r1, #3                 @ Set array length to 3 (r1 holds array size)
+    e3a02000  mov     r2, #0                 @ Initialize outer loop counter i to 0 (r2 holds i)
+	00000000   
+	00000000   
+	00000000
+	
+outer_loop:
+	00000000   
+	00000000
+    e1520001  cmp     r2, r1                 @ Compare i with length of the array (3)
+    eb00002f  bge     end_outer_loop         @ If i >= 3, exit outer loop
+    e1a03002  mov     r3, r2                 @ Copy i to r3 (inner loop counter)
+	00000000   
+	00000000   
+	00000000
+    e2833001  add     r3, r3, #1             @ Start from i+1 for inner loop (j = i + 1)
+	00000000   
+	00000000   
+	00000000
+
+inner_loop:
+	00000000   
+	00000000
+    e1530001  cmp     r3, r1                 @ Compare j with length of array (3) ---- got up to here.
+    eb000012  bge     outer_loop_increment   @ If j >= 3, continue with next i
+    e51b4000  ldr     r4, [r11,#0]           @ Load array[i] into r4
+    e51c5001  ldr     r5, [r12,#-1]          @ Load array[j] into r5
+	00000000   
+	00000000   
+	00000000
+    e1550004  cmp     r5, r4                @ Compare array[j] with array[i]
+    eb000004  bge     no_swap               @ If array[j] >= array[i], no swap needed
+    
+	@ Swap array[i] and array[j]
+    e50b5000  str     r5, [r11, #0]  @ Store array[j] in array[i]
+    e50c4001  str     r4, [r12, #-1]  @ Store array[i] in array[j]
+
+no_swap:
+	00000000   
+	00000000
+    e2833001  add     r3, r3, #1             @ Increment j (inner loop counter)
+	e24cc001  sub     r12,r12,#1             @ Decrement r12 which is the jth element
+    ea100010  b (neg)       inner_loop             @ Go to next inner loop iteration      --im here 
+
+outer_loop_increment:
+	00000000
+	00000000   
+	00000000
+    e2822001  add     r2, r2, #1             @ Increment i (outer loop counter)
+	e24bb001  sub     r11,r11,#1             @ Move to the next ith element: dmem[3] -> dmem[2] -> dmem[1]
+	00000000   
+	00000000   
+	00000000
+	e1a0c00b  mov     r12,r11                @ Set j address = i address since once we go to outer_loopm j address will increment to i+1.
+	00000000   
+	00000000   
+	00000000
+    ea10002a  b       outer_loop             @ Go to next outer loop iteration
+	
+end_outer_loop
+	

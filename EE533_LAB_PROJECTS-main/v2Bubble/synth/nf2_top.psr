@@ -1,0 +1,92 @@
+Release 10.1.03 Physical Synthesis Report K.39 (lin64)
+Copyright (c) 1995-2007 Xilinx, Inc. All rights reserved.
+
+TABLE OF CONTENTS
+  1) Physical Synthesis Options Summary
+  2) Optimizations statistics and details
+
+
+=========================================================================
+*                 Physical Synthesis Options Summary                    *
+=========================================================================
+---- Options
+Global Optimization                 : OFF
+    Retiming                        : OFF
+    Equivalent Register Removal     : OFF
+Timing-Driven Packing and Placement : ON
+    Logic Optimization              : OFF
+    Register Duplication            : ON
+
+---- Target Parameters
+Target Device                       : 2vp50ff1152-7
+
+=========================================================================
+
+
+=========================================================================
+*                        Optimizations                                  *
+=========================================================================
+---- Statistics
+   Number of registers added by Replication                  | 51              
+
+   Overall change in number of registers                     | +51              
+
+
+---- Details
+
+New or modified components                             | Optimization             | Objective           
+-------------------------------------------------------|--------------------------|----------------------
+nf2_core/user_data_path/arm_datapath/EX_MEM/regWrite_o_REPLICA_85| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/EX_MEM/writeReg_o_0_REPLICA_108| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/EX_MEM/writeReg_o_1_REPLICA_105| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/EX_MEM/writeReg_o_2_REPLICA_90| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/EX_MEM/writeReg_o_3_REPLICA_91| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_39| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_40| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_41| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_42| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_43| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_44| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_45| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_46| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_47| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_48| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_49| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_50| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_51| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_52| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_53| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_54| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_55| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_56| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_57| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_58| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/IDEX_alusrc_o_REPLICA_59| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/MEMWB_mem2Reg_o_REPLICA_60| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/MEMWB_mem2Reg_o_REPLICA_61| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/MEMWB_mem2Reg_o_REPLICA_62| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/MEMWB_mem2Reg_o_REPLICA_63| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/MEMWB_mem2Reg_o_REPLICA_64| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/MEMWB_mem2Reg_o_REPLICA_65| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/MEMWB_mem2Reg_o_REPLICA_66| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/MEMWB_mem2Reg_o_REPLICA_67| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/MEMWB_mem2Reg_o_REPLICA_68| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/MEMWB_mem2Reg_o_REPLICA_69| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/MEMWB_mem2Reg_o_REPLICA_70| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/MEMWB_mem2Reg_o_REPLICA_71| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/MEMWB_mem2Reg_o_REPLICA_72| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/MEMWB_mem2Reg_o_REPLICA_73| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/MEMWB_mem2Reg_o_REPLICA_74| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/MEMWB_mem2Reg_o_REPLICA_75| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/MEMWB_mem2Reg_o_REPLICA_76| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/MEMWB_mem2Reg_o_REPLICA_77| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/MEMWB_mem2Reg_o_REPLICA_78| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/MEMWB_mem2Reg_o_REPLICA_79| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/MEM_WB/regWrite_o_REPLICA_88| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/MEM_WB/writeReg_o_2_REPLICA_93| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/pipe_ID_EX/aluCtrl_o_1_REPLICA_102| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/pipe_ID_EX/aluCtrl_o_2_REPLICA_101| Replication              | Fanout Optimization
+nf2_core/user_data_path/arm_datapath/pipe_ID_EX/writeReg_o_3_REPLICA_92| Replication              | Fanout Optimization
+
+
+

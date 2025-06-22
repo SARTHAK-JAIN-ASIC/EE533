@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nf:module xmlns:nf="http://www.NetFPGA.org/NF2_register_system"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://www.NetFPGA.org/NF2_register_system NF2_register_system.xsd">
+
+   <nf:name>ila</nf:name>
+   <nf:prefix>ila</nf:prefix>
+   <nf:location>udp</nf:location>
+   <nf:description>Registers for Integrated Logic Analyzer (ILA) Module</nf:description>
+   <nf:blocksize>128</nf:blocksize>
+
+   <nf:registers>
+        <!-- Software Registers (Controlled by CPU, Read by FPGA) -->
+        <nf:register>
+            <nf:name>max_count_i</nf:name>
+            <nf:description>Number of samples to capture</nf:description>
+            <nf:type>generic_software32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>trigger_i</nf:name>
+            <nf:description>Software writes 1 to start capture</nf:description>
+            <nf:type>generic_software32</nf:type>
+        </nf:register>
+
+        <!-- Hardware Registers (Controlled by FPGA, Read by CPU) -->
+        <nf:register>
+            <nf:name>primed_o</nf:name>
+            <nf:description>Indicates ILA is ready to accept a trigger</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>triggered</nf:name>
+            <nf:description>Indicates ILA has detected a trigger event</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>stopped</nf:name>
+            <nf:description>Indicates ILA capture has completed</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>data_valid</nf:name>
+            <nf:description>Indicates new data is available</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>data_ready</nf:name>
+            <nf:description>Indicates data is ready for software read</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>buffer_count</nf:name>
+            <nf:description>Number of stored samples in memory</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>waddr</nf:name>
+            <nf:description>Write address pointer in BRAM</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>raddr</nf:name>
+            <nf:description>Read address pointer in BRAM</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <!-- Captured Data (Each 72-bit value split into 3x 32-bit registers) -->
+        <nf:register>
+            <nf:name>ila_part_0_0</nf:name>
+            <nf:description>Lower 32 bits of captured sample 0</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+        
+        <nf:register>
+            <nf:name>ila_part_1_0</nf:name>
+            <nf:description>Middle 32 bits of captured sample 0</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+        
+        <nf:register>
+            <nf:name>ila_part_2_0</nf:name>
+            <nf:description>Upper 8 bits of captured sample 0 (padded)</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <!-- Repeat for samples 1-11 -->
+        <nf:register>
+            <nf:name>ila_part_0_1</nf:name>
+            <nf:description>Lower 32 bits of captured sample 1</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_1_1</nf:name>
+            <nf:description>Middle 32 bits of captured sample 1</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_2_1</nf:name>
+            <nf:description>Upper 8 bits of captured sample 1 (padded)</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <!-- Expanded the pattern up to sample 11 -->
+        <nf:register>
+            <nf:name>ila_part_0_2</nf:name>
+            <nf:description>Lower 32 bits of captured sample 1</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_1_2</nf:name>
+            <nf:description>Middle 32 bits of captured sample 1</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_2_2</nf:name>
+            <nf:description>Upper 8 bits of captured sample 1 (padded)</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_0_3</nf:name>
+            <nf:description>Lower 32 bits of captured sample 1</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_1_3</nf:name>
+            <nf:description>Middle 32 bits of captured sample 1</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_2_3</nf:name>
+            <nf:description>Upper 8 bits of captured sample 1 (padded)</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_0_4</nf:name>
+            <nf:description>Lower 32 bits of captured sample 1</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_1_4</nf:name>
+            <nf:description>Middle 32 bits of captured sample 1</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_2_4</nf:name>
+            <nf:description>Upper 8 bits of captured sample 1 (padded)</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_0_5</nf:name>
+            <nf:description>Lower 32 bits of captured sample 1</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_1_5</nf:name>
+            <nf:description>Middle 32 bits of captured sample 1</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_2_5</nf:name>
+            <nf:description>Upper 8 bits of captured sample 1 (padded)</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_0_6</nf:name>
+            <nf:description>Lower 32 bits of captured sample 1</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_1_6</nf:name>
+            <nf:description>Middle 32 bits of captured sample 1</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_2_6</nf:name>
+            <nf:description>Upper 8 bits of captured sample 1 (padded)</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_0_7</nf:name>
+            <nf:description>Lower 32 bits of captured sample 1</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_1_7</nf:name>
+            <nf:description>Middle 32 bits of captured sample 1</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_2_7</nf:name>
+            <nf:description>Upper 8 bits of captured sample 1 (padded)</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_0_8</nf:name>
+            <nf:description>Lower 32 bits of captured sample 1</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_1_8</nf:name>
+            <nf:description>Middle 32 bits of captured sample 1</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_2_8</nf:name>
+            <nf:description>Upper 8 bits of captured sample 1 (padded)</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_0_9</nf:name>
+            <nf:description>Lower 32 bits of captured sample 1</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_1_9</nf:name>
+            <nf:description>Middle 32 bits of captured sample 1</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_2_9</nf:name>
+            <nf:description>Upper 8 bits of captured sample 1 (padded)</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_0_10</nf:name>
+            <nf:description>Lower 32 bits of captured sample 1</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_1_10</nf:name>
+            <nf:description>Middle 32 bits of captured sample 1</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_2_10</nf:name>
+            <nf:description>Upper 8 bits of captured sample 1 (padded)</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_0_11</nf:name>
+            <nf:description>Lower 32 bits of captured sample 1</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_1_11</nf:name>
+            <nf:description>Middle 32 bits of captured sample 1</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+        <nf:register>
+            <nf:name>ila_part_2_11</nf:name>
+            <nf:description>Upper 8 bits of captured sample 1 (padded)</nf:description>
+            <nf:type>generic_hardware32</nf:type>
+        </nf:register>
+
+
+   </nf:registers>
+
+   <nf:constants>
+   </nf:constants>
+
+   <nf:types>
+   </nf:types>
+
+</nf:module>

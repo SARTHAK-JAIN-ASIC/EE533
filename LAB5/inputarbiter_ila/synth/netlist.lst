@@ -1,0 +1,12 @@
+/root/netfpga/projects/inputarbiter_ila/synth/nf2_top.ngc 1739938970
+/root/netfpga/projects/inputarbiter_ila/synth/bram64x256.ngc 1739938617
+/root/netfpga/projects/inputarbiter_ila/synth/syncfifo_512x72.ngc 1739938617
+/root/netfpga/projects/inputarbiter_ila/synth/dual_port_mem_72bit.ngc 1739938617
+/root/netfpga/projects/inputarbiter_ila/synth/cdq_tx_fifo_256x72_to_36.ngc 1739938617
+/root/netfpga/projects/inputarbiter_ila/synth/cdq_rx_fifo_512x36_to_72.ngc 1739938617
+/root/netfpga/projects/inputarbiter_ila/synth/txfifo_512x72_to_9.ngc 1739938617
+/root/netfpga/projects/inputarbiter_ila/synth/rxfifo_8kx9_to_72.ngc 1739938617
+/root/netfpga/projects/inputarbiter_ila/synth/rxlengthfifo_128x13.ngc 1739938617
+/root/netfpga/projects/inputarbiter_ila/synth/pci2net_16x60.ngc 1739938617
+/root/netfpga/projects/inputarbiter_ila/synth/net2pci_16x32.ngc 1739938617
+OK
