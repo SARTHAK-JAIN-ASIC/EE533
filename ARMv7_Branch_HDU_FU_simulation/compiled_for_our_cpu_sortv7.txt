@@ -1,0 +1,55 @@
+    @ Initialize the array
+	mov	r1, #323
+	mov r2, #2
+	mov r3, #123
+	
+	
+	
+	mov r10, #3    @ r10 will be the starting address of the array in dmem
+	
+	str r1, [r10,#0]	323 @ dmem[3] 
+	str r2, [r10,#-1]   2   @ dmem[2]
+	str r3, [r10,#-2]   123 @ dmem[1]
+	
+	
+	
+	
+    mov     r11, r10               @ Load the starting address of the array into r11
+	mov     r12, r11               @ r12 will be used to change the jth element address during the inner loop loading. r11 will be the ith element address.
+    mov     r1, #3                 @ Set array length to 3 (r1 holds array size)
+
+    mov     r2, #0                 @ Initialize outer loop counter i to 0 (r2 holds i)
+outer_loop:
+    cmp     r2, r1                 @ Compare i with length of the array (3)
+    bge     end_outer_loop         @ If i >= 3, exit outer loop
+
+    mov     r3, r2                 @ Copy i to r3 (inner loop counter)
+    add     r3, r3, #1             @ Start from i+1 for inner loop (j = i + 1)
+
+inner_loop:
+    cmp     r3, r1                 @ Compare j with length of array (3)
+    bge     outer_loop_increment   @ If j >= 3, continue with next i
+
+    ldr     r4, [r11,#0]          @ Load array[i] into r4
+    ldr     r5, [r12,#-1]          @ Load array[j] into r5
+    cmp     r5, r4                @ Compare array[j] with array[i]
+    bge     no_swap               @ If array[j] >= array[i], no swap needed
+
+    @ Swap array[i] and array[j]
+    str     r5, [r11, #0]  @ Store array[j] in array[i]
+    str     r4, [r12, #-1]  @ Store array[i] in array[j]
+
+no_swap:
+    add     r3, r3, #1             @ Increment j (inner loop counter)
+	sub     r12,r12,#1             @ Decrement r12 which is the jth element
+    b       inner_loop             @ Go to next inner loop iteration
+
+outer_loop_increment:
+    add     r2, r2, #1             @ Increment i (outer loop counter)
+	sub     r11,r11,#1             @ Move to the next ith element: dmem[3] -> dmem[2] -> dmem[1]
+	mov     r12,r11                @ Set j address = i address since once we go to outer_loopm j address will increment to i+1.
+	
+    b       outer_loop             @ Go to next outer loop iteration
+	
+end_outer_loop
+	

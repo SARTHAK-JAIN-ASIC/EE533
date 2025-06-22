@@ -1,0 +1,613 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/EE533_LAB8
+vadder
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 Dn[GNSL685b`WCJFl[hE_1
+ITRN[QNahQzQSFc1PFUK543
+Z1 dC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU
+w1742095100
+8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/adder.v
+FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/adder.v
+L0 1
+Z2 OL;L;10.6e;65
+Z3 !s108 1742118383.000000
+!s107 C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/adder.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/adder.v|
+!i113 0
+Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z5 tCvgOpt 0
+vALU
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 dWj9lKoSiVL4BzJnS0TeN3
+I5e_2Z94T6A2gU^Bh3kSMg0
+R1
+w1742091207
+8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ALU.v
+FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ALU.v
+L0 5
+R2
+Z6 !s108 1742118382.000000
+!s107 C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ALU.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ALU.v|
+!i113 0
+R4
+R5
+n@a@l@u
+vALU_EX_Mux
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 @LK0Pg0CM?W490:98GhIY3
+IHmcGem3hE<MTmoYU:<CXN1
+R1
+Z7 w1742017134
+8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ALU_EX_Mux.v
+FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ALU_EX_Mux.v
+L0 1
+R2
+R6
+!s107 C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ALU_EX_Mux.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ALU_EX_Mux.v|
+!i113 0
+R4
+R5
+n@a@l@u_@e@x_@mux
+vALUControl
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 YN=A@<Qm3@TA6R@j7z?Gz2
+IbhGQm2_Q`0jk58Y7I3ibV2
+R1
+w1742117659
+8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ALUControl.v
+FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ALUControl.v
+L0 1
+R2
+R6
+!s107 C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ALUControl.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ALUControl.v|
+!i113 0
+R4
+R5
+n@a@l@u@control
+varm_datapath
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 T7g?2U8H<mljCGbOo@Woz2
+IzYokIm@<S;H_JHiFiTTEG0
+R1
+w1742159026
+8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/arm_datapath.v
+FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/arm_datapath.v
+L0 34
+R2
+!s108 1742159044.000000
+!s107 C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/arm_datapath.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/arm_datapath.v|
+!i113 0
+R4
+R5
+vARM_datapath_tb
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 1TJchOYlJ^f`nRohQjSnh1
+I^Ri08U?=OF;GY`NWT`ae<3
+R1
+w1742018582
+8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ARM_datapath_tb.v
+FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ARM_datapath_tb.v
+L0 4
+R2
+R6
+!s107 C:\Users\saint\OneDrive\Documents\USC RELATED STUFF\EE533\LAB7_V2_FW_HDU\sim_initial_src\arm_datapath.v|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ARM_datapath_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ARM_datapath_tb.v|
+!i113 0
+R4
+R5
+n@a@r@m_datapath_tb
+vbranch_and
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 _zER=[Sk?g]_;TQSX0^E^3
+IT^HQVjW`k@lPJ`XN88GF>3
+R1
+w1742095307
+8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/branch_and.v
+FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/branch_and.v
+L0 1
+R2
+R3
+!s107 C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/branch_and.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/branch_and.v|
+!i113 0
+R4
+R5
+vcarry_lookahead
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 5g2c7OdDY>]kJ5:g0NS[F1
+I0H6:PA5RkB0QYkI?4f`GH2
+R1
+R7
+8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/carry_lookahead.v
+FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/carry_lookahead.v
+L0 1
+R2
+R6
+!s107 C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/carry_lookahead.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/carry_lookahead.v|
+!i113 0
+R4
+R5
+vControlUnit
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 gcE;jC`Y3CY:GmCOzPhdX2
+IPg_:DneTnGPMC9f9So;bX0
+R1
+w1742117386
+8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ControlUnit.v
+FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ControlUnit.v
+L0 1
+R2
+R6
+!s107 C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ControlUnit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ControlUnit.v|
+!i113 0
+R4
+R5
+n@control@unit
+vData_Mem
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 zQ<GmzJ9B<[JkdDzF9JJL3
+IlIYD`Beocb;;jbNzFT_eB2
+R1
+R7
+8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/Data_Mem.v
+FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/Data_Mem.v
+L0 3
+R2
+R6
+!s107 C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/Data_Mem.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/Data_Mem.v|
+!i113 0
+R4
+R5
+n@data_@mem
+vForwardingUnit
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 `9DhmV<AeT;82RM2Sl_Qo1
+IoIjYnhL@`WG^QVAzZGFD[1
+R1
+w1742088431
+8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ForwardingUnit.v
+FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ForwardingUnit.v
+L0 1
+R2
+R6
+!s107 C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ForwardingUnit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ForwardingUnit.v|
+!i113 0
+R4
+R5
+n@forwarding@unit
+vForwardingUnitALUMuxA
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 2K1UlkQ76Be4?X5;jMIIe2
+IE_B0b]bUS;0M6kH>?S[ii3
+R1
+R7
+8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ForwardingUnitALUMuxA.v
+FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ForwardingUnitALUMuxA.v
+L0 1
+R2
+R6
+!s107 C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ForwardingUnitALUMuxA.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ForwardingUnitALUMuxA.v|
+!i113 0
+R4
+R5
+n@forwarding@unit@a@l@u@mux@a
+vForwardingUnitALUMuxB
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 BV9>kP@Oh8k>_2ZK`Icba3
+I;cV@hf:<@H?Ej2jMXOJ>K1
+R1
+R7
+8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ForwardingUnitALUMuxB.v
+FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ForwardingUnitALUMuxB.v
+L0 1
+R2
+R6
+!s107 C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ForwardingUnitALUMuxB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ForwardingUnitALUMuxB.v|
+!i113 0
+R4
+R5
+n@forwarding@unit@a@l@u@mux@b
+vHazardDetectionUnit
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 AnfIil_ncJT@^4[>f>19W0
+ICRNVl<?k7]NOdT?0cH;kW3
+R1
+w1742090114
+8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/HazardDetectionUnit.v
+FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/HazardDetectionUnit.v
+L0 1
+R2
+R6
+!s107 C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/HazardDetectionUnit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/HazardDetectionUnit.v|
+!i113 0
+R4
+R5
+n@hazard@detection@unit
+vID_EX
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 4n0eHPA?dQAMjVM=j<P`>3
+I:BlK6aB`0?5?4Dj^AbCV51
+R1
+R7
+8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ID_EX.v
+FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ID_EX.v
+L0 1
+R2
+R3
+!s107 C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ID_EX.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/ID_EX.v|
+!i113 0
+R4
+R5
+n@i@d_@e@x
+vimem32x512
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 Fa;K4mFcSmlI@Q`@S=0k32
+IQIB6Bb=bo:gemF?PFa=bD0
+R1
+R7
+8C:\Users\saint\OneDrive\Documents\USC RELATED STUFF\EE533\LAB7_V2_FW_HDU\sim_initial_src\imem32x512.v
+FC:\Users\saint\OneDrive\Documents\USC RELATED STUFF\EE533\LAB7_V2_FW_HDU\sim_initial_src\imem32x512.v
+L0 3
+R2
+R3
+!s107 C:\Users\saint\OneDrive\Documents\USC RELATED STUFF\EE533\LAB7_V2_FW_HDU\sim_initial_src\imem32x512.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:\Users\saint\OneDrive\Documents\USC RELATED STUFF\EE533\LAB7_V2_FW_HDU\sim_initial_src\imem32x512.v|
+!i113 0
+R4
+R5
+vMux2x1
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 Kdlb;E=HI<G91fOS2IjLb1
+IQO4k0Z1J<aK1=d^_igUFl3
+R1
+R7
+8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/Mux2x1.v
+FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/Mux2x1.v
+L0 1
+R2
+R3
+!s107 C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/Mux2x1.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/Mux2x1.v|
+!i113 0
+R4
+R5
+n@mux2x1
+vMux2x1_9bit
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 ;O_2oQcfVJzBDOJPZ]bBC2
+IK<Sa22BRJXGlAIJcgh=6G3
+R1
+R7
+Z8 8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/Mux2x1_9bit.v
+Z9 FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/Mux2x1_9bit.v
+L0 1
+R2
+!s108 1742090551.000000
+Z10 !s107 C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/Mux2x1_9bit.v|
+Z11 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/Mux2x1_9bit.v|
+!i113 0
+R4
+R5
+n@mux2x1_9bit
+vMux2x1_Parameterized
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 TUSb:z_0E=IRUmV3R`YRV0
+IdYW8MB8mVA4RLB]fjVUX02
+R1
+w1742109827
+R8
+R9
+L0 1
+R2
+R3
+R10
+R11
+!i113 0
+R4
+R5
+n@mux2x1_@parameterized
+vPC
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 5U4oc7JiB4_;2:EK;Oa030
+IK2m=DR>z[KjLOifJGMLY?0
+R1
+R7
+8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/PC.v
+FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/PC.v
+L0 1
+R2
+R3
+!s107 C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/PC.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/PC.v|
+!i113 0
+R4
+R5
+n@p@c
+vPC_Adder
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 FGil>l;>>`HXRR6_kgG=X1
+IZSAXe0X;@bKHbiITLe^?o3
+R1
+R7
+8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/PC_Adder.v
+FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/PC_Adder.v
+L0 1
+R2
+R3
+!s107 C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/PC_Adder.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/PC_Adder.v|
+!i113 0
+R4
+R5
+n@p@c_@adder
+vPC_Mux
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 ;P[cfBJfZm3UZ^m3@bYKf3
+IKWM4jnBKdAS:W8A_VCZD=3
+R1
+R7
+8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/PC_Mux.v
+FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/PC_Mux.v
+L0 1
+R2
+R3
+!s107 C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/PC_Mux.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/PC_Mux.v|
+!i113 0
+R4
+R5
+n@p@c_@mux
+vpipe_EXMEM
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 3XI4IG[TjF5fm4RUA>nYF3
+I^e2ECL@EK[8iQ9NMQ:POG2
+R1
+R7
+8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/pipe_EXMEM.v
+FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/pipe_EXMEM.v
+L0 1
+R2
+R3
+!s107 C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/pipe_EXMEM.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/pipe_EXMEM.v|
+!i113 0
+R4
+R5
+npipe_@e@x@m@e@m
+vpipe_IFID
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 h?Gzl]hF3?SU=MhcO`7U83
+I8C^9^7bNTO0=<5FL[g1l51
+R1
+w1742117427
+8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/IF_ID.v
+FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/IF_ID.v
+L0 1
+R2
+R3
+!s107 C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/IF_ID.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/IF_ID.v|
+!i113 0
+R4
+R5
+npipe_@i@f@i@d
+vpipe_MEMWB
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 ilNaYAfHKCogOGHOfVZX:0
+ICDTf`lAKOL2F8JC@]SmQQ3
+R1
+R7
+8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/pipe_MEMWB.v
+FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/pipe_MEMWB.v
+L0 2
+R2
+R3
+!s107 C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/pipe_MEMWB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/pipe_MEMWB.v|
+!i113 0
+R4
+R5
+npipe_@m@e@m@w@b
+vregfile
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 Piz<3dR^ijoglNZ2oa6kj2
+Ia;EG2fd;<VZgkGC1WU2@?2
+R1
+R7
+8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/regfile.v
+FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/regfile.v
+L0 1
+R2
+R3
+!s107 C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/regfile.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/regfile.v|
+!i113 0
+R4
+R5
+vRegisterSelect_Mux
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 KjGH;l>P:=0m3H643g3PC2
+Im=a2NH5ec@]miVbY1ec160
+R1
+R7
+8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/RegisterSelect_Mux.v
+FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/RegisterSelect_Mux.v
+L0 1
+R2
+R3
+!s107 C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/RegisterSelect_Mux.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/RegisterSelect_Mux.v|
+!i113 0
+R4
+R5
+n@register@select_@mux
+vshift_then_compare
+!s110 1742118383
+!i10b 1
+!s100 6aP4>e@1_EnAT4j2FPL?K2
+ILj3FB2c`<<d_7NoX;T;<93
+R0
+R1
+R7
+8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/shift_then_compare.v
+FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/shift_then_compare.v
+L0 1
+R2
+r1
+!s85 0
+31
+R3
+!s107 C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/shift_then_compare.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/shift_then_compare.v|
+!i113 0
+R4
+R5
+vsignExtended
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 <BS^FH361M@E><2;NSS`f2
+I=cA67f5m8?QfiOTDO;i3k1
+R1
+R7
+8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/signExtended.v
+FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/signExtended.v
+L0 1
+R2
+R3
+!s107 C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/signExtended.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_V2_FW_HDU/sim_initial_src/signExtended.v|
+!i113 0
+R4
+R5
+nsign@extended
