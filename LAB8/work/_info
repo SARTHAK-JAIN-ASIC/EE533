@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/LAB7_Final
+vCONVERTIBLE_FIFO
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 RW3@o>PTEfeB:P::bT==91
+IUfc<5f]C68X[LhWEMhJT]1
+Z1 dC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/EE533_LAB8
+w1741832978
+8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/EE533_LAB8/CONVERTIBLE_FIFO.v
+FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/EE533_LAB8/CONVERTIBLE_FIFO.v
+L0 1
+Z2 OL;L;10.6e;65
+Z3 !s108 1741832987.000000
+!s107 C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/EE533_LAB8/CONVERTIBLE_FIFO.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/EE533_LAB8/CONVERTIBLE_FIFO.v|
+!i113 0
+Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z5 tCvgOpt 0
+n@c@o@n@v@e@r@t@i@b@l@e_@f@i@f@o
+vtb_CONVERTIBLE_FIFO
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 Pm9O0Pn441f:51DT;;B;81
+IKQXaQ^aO9FddBPQ0diRK20
+R1
+w1741832641
+8C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/EE533_LAB8/tb_convertible_fifo.v
+FC:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/EE533_LAB8/tb_convertible_fifo.v
+L0 3
+R2
+R3
+!s107 C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/EE533_LAB8/tb_convertible_fifo.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/EE533_LAB8/tb_convertible_fifo.v|
+!i113 0
+R4
+R5
+ntb_@c@o@n@v@e@r@t@i@b@l@e_@f@i@f@o

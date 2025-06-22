@@ -1,0 +1,15 @@
+{C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/EE533_LAB8/CONVERTIBLE_FIFO.v} {1 {vlog -work work -vopt -stats=none {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/EE533_LAB8/CONVERTIBLE_FIFO.v}
+Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+-- Compiling module CONVERTIBLE_FIFO
+
+Top level modules:
+	CONVERTIBLE_FIFO
+
+} {} {}} {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/EE533_LAB8/tb_convertible_fifo.v} {1 {vlog -work work -vopt -stats=none {C:/Users/saint/OneDrive/Documents/USC RELATED STUFF/EE533/EE533_LAB8/tb_convertible_fifo.v}
+Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+-- Compiling module tb_CONVERTIBLE_FIFO
+
+Top level modules:
+	tb_CONVERTIBLE_FIFO
+
+} {} {}}
